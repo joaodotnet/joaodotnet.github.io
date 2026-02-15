@@ -1,0 +1,64 @@
+@page "/post/{slug}"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Post> Localizer
+@inject BlogService BlogService
+
+<PageTitle>@pageTitle</PageTitle>
+
+<section class="section">
+    @if (isLoading)
+    {
+        <LoadingSpinner />
+    }
+    else if (postMetadata is null)
+    {
+        <p class="empty-state">@Localizer["NotFound"]</p>
+    }
+    else
+    {
+        <div class="post-header">
+            <h1>@postMetadata.Title</h1>
+            <div class="post-header-meta">
+                <span>@postMetadata.Date.ToString("D")</span>
+                <span>@postMetadata.ReadTimeMinutes @Localizer["ReadTime"]</span>
+            </div>
+            <div class="post-tags">
+                @foreach (var tag in postMetadata.Tags)
+                {
+                    <TagBadge Text="@tag" />
+                }
+            </div>
+        </div>
+
+        @if (isFallback)
+        {
+            <div class="notice">
+                <strong>@Localizer["FallbackTitle"]</strong>
+                <p>@Localizer["FallbackBody"]</p>
+            </div>
+        }
+
+        <MarkdownRenderer Markdown="@postContent" />
+    }
+</section>
+
+@code {
+    [Parameter]
+    public string Slug { get; set; } = string.Empty;
+
+    private bool isLoading = true;
+    private bool isFallback;
+    private string pageTitle = "Post";
+    private PostMetadata? postMetadata;
+    private string postContent = string.Empty;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        isLoading = true;
+        var result = await BlogService.GetPostAsync(Slug);
+        postMetadata = result.Metadata;
+        postContent = result.Content;
+        isFallback = result.IsFallback;
+        pageTitle = postMetadata?.Title ?? Localizer["PageTitle"];
+        isLoading = false;
+    }
+}

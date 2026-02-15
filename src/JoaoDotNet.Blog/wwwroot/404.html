@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting...</title>
+    <script>
+        (function () {
+            const path = window.location.pathname;
+            const search = window.location.search;
+            const hash = window.location.hash;
+            const target = `/?path=${encodeURIComponent(path)}&search=${encodeURIComponent(search)}&hash=${encodeURIComponent(hash)}`;
+            window.location.replace(target);
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

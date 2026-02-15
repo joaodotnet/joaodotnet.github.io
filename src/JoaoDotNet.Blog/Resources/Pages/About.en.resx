@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Hero_Kicker" xml:space="preserve">
+    <value>Experience and .NET identity</value>
+  </data>
+  <data name="Hero_Title" xml:space="preserve">
+    <value>Hi, I'm Joao Goncalves</value>
+  </data>
+  <data name="Hero_Subtitle" xml:space="preserve">
+    <value>I turn product challenges into .NET solutions with measurable impact.</value>
+  </data>
+  <data name="Bio_Intro" xml:space="preserve">
+    <value>I'm a software engineer focused on architecture, integration, and digital experiences that scale. I work with international teams to deliver reliable products.</value>
+  </data>
+  <data name="Section_Experience" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+  <data name="Section_Skills" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="Section_Certifications" xml:space="preserve">
+    <value>Certifications</value>
+  </data>
+  <data name="Section_Education" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="Education_Title" xml:space="preserve">
+    <value>Computer Engineering</value>
+  </data>
+  <data name="Education_Body" xml:space="preserve">
+    <value>Bachelor's degree with focus on distributed systems and web development.</value>
+  </data>
+  <data name="Timeline_1_Title" xml:space="preserve">
+    <value>Senior .NET Engineer</value>
+  </data>
+  <data name="Timeline_1_Company" xml:space="preserve">
+    <value>European Company</value>
+  </data>
+  <data name="Timeline_1_Period" xml:space="preserve">
+    <value>2023 - Present</value>
+  </data>
+  <data name="Timeline_1_Description" xml:space="preserve">
+    <value>Architecting microservices, Blazor, and cloud platforms with scalability in mind.</value>
+  </data>
+  <data name="Timeline_2_Title" xml:space="preserve">
+    <value>.NET Full Stack Engineer</value>
+  </data>
+  <data name="Timeline_2_Company" xml:space="preserve">
+    <value>Digital Consultancy</value>
+  </data>
+  <data name="Timeline_2_Period" xml:space="preserve">
+    <value>2020 - 2023</value>
+  </data>
+  <data name="Timeline_2_Description" xml:space="preserve">
+    <value>Delivered web products, APIs, and design-led experiences for global clients.</value>
+  </data>
+  <data name="Skill_1" xml:space="preserve">
+    <value>.NET 10 / C#</value>
+  </data>
+  <data name="Skill_2" xml:space="preserve">
+    <value>Blazor WebAssembly</value>
+  </data>
+  <data name="Skill_3" xml:space="preserve">
+    <value>Software Architecture</value>
+  </data>
+  <data name="Skill_4" xml:space="preserve">
+    <value>APIs and Integrations</value>
+  </data>
+  <data name="Skill_5" xml:space="preserve">
+    <value>Azure and DevOps</value>
+  </data>
+  <data name="Skill_6" xml:space="preserve">
+    <value>Technical UX</value>
+  </data>
+  <data name="Cert_1" xml:space="preserve">
+    <value>Microsoft Certified: Azure Developer Associate</value>
+  </data>
+  <data name="Cert_2" xml:space="preserve">
+    <value>Scrum Professional</value>
+  </data>
+  <data name="Cert_3" xml:space="preserve">
+    <value>Design Systems for Product Teams</value>
+  </data>
+</root>

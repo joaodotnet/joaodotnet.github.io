@@ -1,0 +1,16 @@
+@inject CultureService CultureService
+@inject NavigationManager NavigationManager
+
+<div class="lang-toggle" role="group" aria-label="Language toggle">
+    <button class="lang-button @(CultureService.IsPortuguese ? "active" : string.Empty)" @onclick='() => SwitchCulture("pt-PT")'>PT</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-button @(CultureService.IsPortuguese ? string.Empty : "active")" @onclick='() => SwitchCulture("en")'>EN</button>
+</div>
+
+@code {
+    private async Task SwitchCulture(string culture)
+    {
+        await CultureService.SetCultureAsync(culture);
+        NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+    }
+}

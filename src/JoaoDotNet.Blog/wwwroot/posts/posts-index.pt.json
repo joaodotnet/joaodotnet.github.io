@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Bem-vindo ao Meu Blog",
+    "date": "2026-02-15T00:00:00",
+    "tags": [
+      "blazor",
+      "dotnet",
+      "webassembly"
+    ],
+    "summary": "Como constru\u00ED um blog est\u00E1tico com Blazor WebAssembly.",
+    "slug": "welcome",
+    "lang": "pt",
+    "readTimeMinutes": 1,
+    "hasTranslation": true,
+    "translationSlug": "welcome",
+    "coverImage": "/images/posts/welcome.jpg"
+  },
+  {
+    "title": "Construindo Este Blog com Blazor",
+    "date": "2026-02-10T00:00:00",
+    "tags": [
+      "blazor",
+      "dotnet",
+      "wasm"
+    ],
+    "summary": "Porque escolhi Blazor WASM para um blog pessoal e o que aprendi com isso.",
+    "slug": "blazor-wasm-blog",
+    "lang": "pt",
+    "readTimeMinutes": 1,
+    "hasTranslation": true,
+    "translationSlug": "blazor-wasm-blog",
+    "coverImage": "/images/posts/blazor-wasm.jpg"
+  }
+]

@@ -1,0 +1,54 @@
+﻿@page "/"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Home> Localizer
+@inject BlogService BlogService
+
+<PageTitle>@Localizer["PageTitle"]</PageTitle>
+
+<HeroSection Kicker="@Localizer["Hero_Kicker"]"
+			 Title="@Localizer["Hero_Title"]"
+			 Subtitle="@Localizer["Hero_Subtitle"]"
+			 PrimaryText="@Localizer["Hero_Primary"]"
+			 PrimaryHref="posts"
+			 SecondaryText="@Localizer["Hero_Secondary"]"
+			 SecondaryHref="about"
+			 CardTitle="@Localizer["Hero_CardTitle"]"
+			 CardBody="@Localizer["Hero_CardBody"]" />
+
+<section class="section">
+	<div class="section-header">
+		<h2>@Localizer["LatestPosts"]</h2>
+	</div>
+
+	@if (isLoading)
+	{
+		<LoadingSpinner />
+	}
+	else if (latestPosts.Count == 0)
+	{
+		<p class="empty-state">@Localizer["LatestPosts_Empty"]</p>
+	}
+	else
+	{
+		<div class="post-grid">
+			@foreach (var post in latestPosts)
+			{
+				<PostCard Post="@post" />
+			}
+		</div>
+	}
+</section>
+
+@code {
+	private bool isLoading = true;
+	private List<PostMetadata> latestPosts = new();
+
+	protected override async Task OnInitializedAsync()
+	{
+		var posts = await BlogService.GetPostsAsync();
+		latestPosts = posts
+			.OrderByDescending(post => post.Date)
+			.Take(3)
+			.ToList();
+		isLoading = false;
+	}
+}

@@ -1,0 +1,19 @@
+﻿@inherits LayoutComponentBase
+@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResources> Localizer
+
+<div class="app-shell">
+    <header class="site-header">
+        <NavMenu />
+    </header>
+
+    <main class="site-main">
+        @Body
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span>JoaoDotNet &copy; @DateTime.UtcNow.Year</span>
+            <span>@Localizer["Footer_Rights"]</span>
+        </div>
+    </footer>
+</div>

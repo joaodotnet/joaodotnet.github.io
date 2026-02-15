@@ -1,0 +1,26 @@
+﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResources> Localizer
+
+<nav class="nav-bar">
+    <a class="brand" href="">joaodotnet</a>
+
+    <button class="nav-toggle" @onclick="ToggleNavMenu" aria-expanded="@isNavOpen">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+    </button>
+
+    <div class="nav-links @(isNavOpen ? "open" : string.Empty)">
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">@Localizer["Nav_Home"]</NavLink>
+        <NavLink class="nav-link" href="posts">@Localizer["Nav_Blog"]</NavLink>
+        <NavLink class="nav-link" href="about">@Localizer["Nav_About"]</NavLink>
+        <LanguageToggle />
+    </div>
+</nav>
+
+@code {
+    private bool isNavOpen;
+
+    private void ToggleNavMenu()
+    {
+        isNavOpen = !isNavOpen;
+    }
+}

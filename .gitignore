@@ -1,0 +1,25 @@
+bin/
+obj/
+**/bin/
+**/obj/
+
+# build output
+publish/
+**/publish/
+
+# user files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS
+.vs/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# tooling
+*.log

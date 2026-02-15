@@ -1,0 +1,7 @@
+﻿@page "/not-found"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResources> Localizer
+
+<section class="section">
+	<h1>@Localizer["NotFound_Title"]</h1>
+	<p class="empty-state">@Localizer["NotFound_Body"]</p>
+</section>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Nav_Home" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="Nav_Blog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="Nav_About" xml:space="preserve">
+    <value>Sobre Mim</value>
+  </data>
+  <data name="Footer_Rights" xml:space="preserve">
+    <value>Todos os direitos reservados.</value>
+  </data>
+  <data name="NotFound_Title" xml:space="preserve">
+    <value>Página não encontrada</value>
+  </data>
+  <data name="NotFound_Body" xml:space="preserve">
+    <value>O conteúdo que procuras não existe.</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Ler mais</value>
+  </data>
+  <data name="ReadTime" xml:space="preserve">
+    <value>min de leitura</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+</root>

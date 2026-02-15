@@ -1,0 +1,100 @@
+@page "/about"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<About> Localizer
+
+<PageTitle>@Localizer["PageTitle"]</PageTitle>
+
+<section class="about-hero">
+    <div>
+        <p class="hero-kicker">@Localizer["Hero_Kicker"]</p>
+        <h1>@Localizer["Hero_Title"]</h1>
+        <p class="hero-subtitle">@Localizer["Hero_Subtitle"]</p>
+    </div>
+    <div class="about-card">
+        <p>@Localizer["Bio_Intro"]</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2>@Localizer["Section_Experience"]</h2>
+    </div>
+    <ExperienceTimeline Items="@timelineItems" />
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2>@Localizer["Section_Skills"]</h2>
+    </div>
+    <div class="chip-grid">
+        @foreach (var skill in skills)
+        {
+            <span class="chip">@skill</span>
+        }
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2>@Localizer["Section_Certifications"]</h2>
+    </div>
+    <div class="card-grid">
+        @foreach (var certification in certifications)
+        {
+            <div class="info-card">@certification</div>
+        }
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2>@Localizer["Section_Education"]</h2>
+    </div>
+    <div class="info-card">
+        <h3>@Localizer["Education_Title"]</h3>
+        <p>@Localizer["Education_Body"]</p>
+    </div>
+</section>
+
+@code {
+    private IReadOnlyList<TimelineEntry> timelineItems = Array.Empty<TimelineEntry>();
+    private IReadOnlyList<string> skills = Array.Empty<string>();
+    private IReadOnlyList<string> certifications = Array.Empty<string>();
+
+    protected override void OnInitialized()
+    {
+        timelineItems = new List<TimelineEntry>
+        {
+            new()
+            {
+                Title = Localizer["Timeline_1_Title"],
+                Company = Localizer["Timeline_1_Company"],
+                Period = Localizer["Timeline_1_Period"],
+                Description = Localizer["Timeline_1_Description"]
+            },
+            new()
+            {
+                Title = Localizer["Timeline_2_Title"],
+                Company = Localizer["Timeline_2_Company"],
+                Period = Localizer["Timeline_2_Period"],
+                Description = Localizer["Timeline_2_Description"]
+            }
+        };
+
+        skills = new List<string>
+        {
+            Localizer["Skill_1"],
+            Localizer["Skill_2"],
+            Localizer["Skill_3"],
+            Localizer["Skill_4"],
+            Localizer["Skill_5"],
+            Localizer["Skill_6"]
+        };
+
+        certifications = new List<string>
+        {
+            Localizer["Cert_1"],
+            Localizer["Cert_2"],
+            Localizer["Cert_3"]
+        };
+    }
+}

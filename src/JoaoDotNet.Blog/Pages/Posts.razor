@@ -1,0 +1,54 @@
+@page "/posts"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Posts> Localizer
+@inject BlogService BlogService
+@inject SearchService SearchService
+
+<PageTitle>@Localizer["PageTitle"]</PageTitle>
+
+<section class="section">
+    <div class="section-header">
+        <h1>@Localizer["AllPosts"]</h1>
+    </div>
+
+    <SearchBar Placeholder="@Localizer["Search_Placeholder"]" SearchText="@searchText" SearchTextChanged="OnSearchChanged" />
+
+    @if (isLoading)
+    {
+        <LoadingSpinner />
+    }
+    else if (filteredPosts.Count == 0)
+    {
+        <p class="empty-state">@Localizer["NoResults"]</p>
+    }
+    else
+    {
+        <div class="post-grid">
+            @foreach (var post in filteredPosts)
+            {
+                <PostCard Post="@post" />
+            }
+        </div>
+    }
+</section>
+
+@code {
+    private bool isLoading = true;
+    private string searchText = string.Empty;
+    private List<PostMetadata> allPosts = new();
+    private List<PostMetadata> filteredPosts = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var posts = await BlogService.GetPostsAsync();
+        allPosts = posts.OrderByDescending(post => post.Date).ToList();
+        filteredPosts = allPosts;
+        isLoading = false;
+    }
+
+    private Task OnSearchChanged(string value)
+    {
+        searchText = value;
+        filteredPosts = SearchService.FilterPosts(allPosts, searchText, tag: null).ToList();
+        return Task.CompletedTask;
+    }
+}

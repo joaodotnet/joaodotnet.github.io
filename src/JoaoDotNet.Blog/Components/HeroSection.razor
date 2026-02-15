@@ -1,0 +1,46 @@
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-kicker">@Kicker</p>
+        <h1>@Title</h1>
+        <p class="hero-subtitle">@Subtitle</p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="@PrimaryHref">@PrimaryText</a>
+            <a class="btn btn-ghost" href="@SecondaryHref">@SecondaryText</a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="hero-card">
+            <p class="hero-card-title">@CardTitle</p>
+            <p class="hero-card-body">@CardBody</p>
+        </div>
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired]
+    public string Kicker { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string Subtitle { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string PrimaryText { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string PrimaryHref { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string SecondaryText { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string SecondaryHref { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string CardTitle { get; set; } = string.Empty;
+
+    [Parameter, EditorRequired]
+    public string CardBody { get; set; } = string.Empty;
+}

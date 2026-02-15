@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Hero_Kicker" xml:space="preserve">
+    <value>.NET Software Engineer</value>
+  </data>
+  <data name="Hero_Title" xml:space="preserve">
+    <value>Pragmatic architecture for resilient digital products</value>
+  </data>
+  <data name="Hero_Subtitle" xml:space="preserve">
+    <value>I build Blazor experiences and .NET APIs with performance, design, and real value in mind.</value>
+  </data>
+  <data name="Hero_Primary" xml:space="preserve">
+    <value>View posts</value>
+  </data>
+  <data name="Hero_Secondary" xml:space="preserve">
+    <value>About me</value>
+  </data>
+  <data name="Hero_CardTitle" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="Hero_CardBody" xml:space="preserve">
+    <value>Building a bilingual Blazor WASM blog with a .NET-first identity.</value>
+  </data>
+  <data name="LatestPosts" xml:space="preserve">
+    <value>Latest Posts</value>
+  </data>
+  <data name="LatestPosts_Empty" xml:space="preserve">
+    <value>No posts published yet.</value>
+  </data>
+</root>

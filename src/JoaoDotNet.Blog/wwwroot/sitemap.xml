@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://joaodotnet.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/posts</loc>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/about</loc>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/post/blazor-wasm-blog</loc>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/post/blazor-wasm-blog?lang=pt</loc>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/post/blazor-wasm-blog?lang=en</loc>
+    <lastmod>2026-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/post/welcome</loc>
+    <lastmod>2026-02-15</lastmod>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/post/welcome?lang=pt</loc>
+    <lastmod>2026-02-15</lastmod>
+  </url>
+  <url>
+    <loc>https://joaodotnet.github.io/post/welcome?lang=en</loc>
+    <lastmod>2026-02-15</lastmod>
+  </url>
+</urlset>
