@@ -1,4 +1,4 @@
-namespace JoaoDotNet.Blog.Resources;
+namespace JoaoDotNet.Blog;
 
 public sealed class SharedResources
 {

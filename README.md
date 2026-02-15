@@ -23,6 +23,7 @@ dotnet run --project src/JoaoDotNet.Blog.Tools --configuration Release
 dotnet run --project src/JoaoDotNet.Blog
 ```
 
+
 ## Posts
 
 - Files: wwwroot/posts/{slug}.pt.md and wwwroot/posts/{slug}.en.md
