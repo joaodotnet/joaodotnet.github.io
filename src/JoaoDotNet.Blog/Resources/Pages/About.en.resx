@@ -16,16 +16,17 @@
     <value>About</value>
   </data>
   <data name="Hero_Kicker" xml:space="preserve">
-    <value>Experience and .NET identity</value>
+    <value>.NET Solution Architect</value>
   </data>
   <data name="Hero_Title" xml:space="preserve">
     <value>Hi, I'm Joao Goncalves</value>
   </data>
   <data name="Hero_Subtitle" xml:space="preserve">
-    <value>I turn product challenges into .NET solutions with measurable impact.</value>
+    <value>Professional with over 18 years of experience in designing and implementing high-performance IT solutions.</value>
   </data>
   <data name="Bio_Intro" xml:space="preserve">
-    <value>I'm a software engineer focused on architecture, integration, and digital experiences that scale. I work with international teams to deliver reliable products.</value>
+    <value>Combines deep technical expertise with a commitment to best practices, translating business needs into robust and scalable architectures. Extensive experience leading development teams and executing complex projects across various business sectors, specializing in Microsoft technologies like Azure, .NET, Blazor, Razor Pages, MVC, Entity Framework, and SQL Server.&lt;br/&gt;&lt;br/&gt;Passionate about developing cloud-native applications in Azure, with a focus on event-driven architectures and microservices development. Experienced in DevOps practices and proficient in both back-end and front-end development, building robust web applications and designing RESTful APIs that elevate user experiences.</value>
+    <!-- <value>I'm a software engineer focused on architecture, integration, and digital experiences that scale. I work with international teams to deliver reliable products.</value> -->
   </data>
   <data name="Section_Experience" xml:space="preserve">
     <value>Experience</value>
@@ -70,22 +71,31 @@
     <value>Delivered web products, APIs, and design-led experiences for global clients.</value>
   </data>
   <data name="Skill_1" xml:space="preserve">
-    <value>.NET 10 / C#</value>
+    <value>Azure</value>
   </data>
   <data name="Skill_2" xml:space="preserve">
-    <value>Blazor WebAssembly</value>
+    <value>.NET</value>
   </data>
   <data name="Skill_3" xml:space="preserve">
-    <value>Software Architecture</value>
+    <value>Event Driven Architecture</value>
   </data>
   <data name="Skill_4" xml:space="preserve">
-    <value>APIs and Integrations</value>
+    <value>Microservices</value>
   </data>
   <data name="Skill_5" xml:space="preserve">
-    <value>Azure and DevOps</value>
+    <value>Monolithic Architecture</value>
   </data>
   <data name="Skill_6" xml:space="preserve">
-    <value>Technical UX</value>
+    <value>Clean Architecture</value>
+  </data>
+  <data name="Skill_7" xml:space="preserve">
+    <value>DDD</value>
+  </data>
+  <data name="Skill_8" xml:space="preserve">
+    <value>CQRS</value>
+  </data>
+  <data name="Skill_9" xml:space="preserve">
+    <value>DevOps practices</value>
   </data>
   <data name="Cert_1" xml:space="preserve">
     <value>Microsoft Certified: Azure Developer Associate</value>

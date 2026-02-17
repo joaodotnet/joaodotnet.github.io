@@ -10,15 +10,8 @@
         <p class="hero-subtitle">@Localizer["Hero_Subtitle"]</p>
     </div>
     <div class="about-card">
-        <p>@Localizer["Bio_Intro"]</p>
+        <p>@((MarkupString)Localizer["Bio_Intro"].Value)</p>
     </div>
-</section>
-
-<section class="section">
-    <div class="section-header">
-        <h2>@Localizer["Section_Experience"]</h2>
-    </div>
-    <ExperienceTimeline Items="@timelineItems" />
 </section>
 
 <section class="section">
@@ -31,6 +24,13 @@
             <span class="chip">@skill</span>
         }
     </div>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <h2>@Localizer["Section_Experience"]</h2>
+    </div>
+    <ExperienceTimeline Items="@timelineItems" />
 </section>
 
 <section class="section">
@@ -87,7 +87,10 @@
             Localizer["Skill_3"],
             Localizer["Skill_4"],
             Localizer["Skill_5"],
-            Localizer["Skill_6"]
+            Localizer["Skill_6"],
+            Localizer["Skill_7"],
+            Localizer["Skill_8"],
+            Localizer["Skill_9"]
         };
 
         certifications = new List<string>
