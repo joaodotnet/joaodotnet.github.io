@@ -298,16 +298,40 @@ a {
 
 .about-hero {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.about-copy {
+    max-width: 46rem;
+}
+
+.about-copy h1 {
+    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.about-copy .hero-subtitle {
+    font-size: clamp(1.2rem, 2.3vw, 1.55rem);
+    line-height: 1.4;
+    max-width: none;
+    margin: 0;
 }
 
 .about-card {
     background: var(--surface-elevated);
     border: 1px solid var(--border);
-    padding: 1.5rem;
+    padding: 1.4rem 1.6rem;
     border-radius: 1.2rem;
+}
+
+.about-card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .timeline {
@@ -551,6 +575,15 @@ a {
 
     .nav-bar {
         padding: 1rem 1.5rem;
+    }
+
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-copy {
+        max-width: none;
     }
 }
 
