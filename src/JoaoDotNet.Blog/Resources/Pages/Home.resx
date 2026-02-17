@@ -16,13 +16,13 @@
     <value>Início</value>
   </data>
   <data name="Hero_Kicker" xml:space="preserve">
-    <value>Engenheiro de Software .NET</value>
+    <value>Arquiteto de Soluções .NET</value>
   </data>
   <data name="Hero_Title" xml:space="preserve">
-    <value>Arquitetura pragmática para produtos digitais sólidos</value>
+    <value>Arquiteturas Escaláveis para Soluções Modernas</value>
   </data>
   <data name="Hero_Subtitle" xml:space="preserve">
-    <value>Crio experiências Blazor e APIs .NET com foco em performance, design e valor real.</value>
+    <value>Mais de 18 anos a desenhar sistemas de alta performance em Azure. De monolitos modulares a microsserviços cloud-native, crio a arquitetura certa para o seu negócio.</value>
   </data>
   <data name="Hero_Primary" xml:space="preserve">
     <value>Ver artigos</value>
@@ -35,6 +35,9 @@
   </data>
   <data name="Hero_CardBody" xml:space="preserve">
     <value>A construir um blog Blazor WASM bilingue com identidade .NET.</value>
+  </data>
+  <data name="Hero_ImageAlt" xml:space="preserve">
+    <value>Foto de Perfil de João Gonçalves</value>
   </data>
   <data name="LatestPosts" xml:space="preserve">
     <value>Últimos Artigos</value>

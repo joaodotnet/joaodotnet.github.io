@@ -10,8 +10,26 @@
     </div>
     <div class="hero-visual">
         <div class="hero-card">
-            <p class="hero-card-title">@CardTitle</p>
-            <p class="hero-card-body">@CardBody</p>
+            @if (!string.IsNullOrEmpty(VisualImageSrc))
+            {
+                <img src="@VisualImageSrc" 
+                     alt="@VisualImageAlt" 
+                     class="hero-image" 
+                     width="@VisualImageWidth"
+                     height="@VisualImageHeight"
+                     fetchpriority="high"
+                     decoding="async"
+                     onError="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                <div style="display:none">
+                    <p class="hero-card-title">@CardTitle</p>
+                    <p class="hero-card-body">@CardBody</p>
+                </div>
+            }
+            else
+            {
+                <p class="hero-card-title">@CardTitle</p>
+                <p class="hero-card-body">@CardBody</p>
+            }
         </div>
     </div>
 </section>
@@ -38,9 +56,21 @@
     [Parameter, EditorRequired]
     public string SecondaryHref { get; set; } = string.Empty;
 
-    [Parameter, EditorRequired]
-    public string CardTitle { get; set; } = string.Empty;
+    [Parameter]
+    public string? CardTitle { get; set; }
 
-    [Parameter, EditorRequired]
-    public string CardBody { get; set; } = string.Empty;
+    [Parameter]
+    public string? CardBody { get; set; }
+
+    [Parameter]
+    public string? VisualImageSrc { get; set; }
+
+    [Parameter]
+    public string VisualImageAlt { get; set; } = "Profile Image";
+
+    [Parameter]
+    public int? VisualImageWidth { get; set; }
+
+    [Parameter]
+    public int? VisualImageHeight { get; set; }
 }

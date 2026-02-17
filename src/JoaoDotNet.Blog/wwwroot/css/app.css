@@ -68,7 +68,7 @@ a {
 .brand {
     font-family: "Clash Display", sans-serif;
     font-size: 1.3rem;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 0.08em;
     color: var(--primary);
 }
@@ -553,3 +553,11 @@ a {
         padding: 1rem 1.5rem;
     }
 }
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+} 
