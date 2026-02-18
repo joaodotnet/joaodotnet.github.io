@@ -46,28 +46,52 @@
     <value>Licenciatura com foco em sistemas distribuídos e desenvolvimento web.</value>
   </data>
   <data name="Timeline_1_Title" xml:space="preserve">
-    <value>Senior .NET Engineer</value>
+    <value>Arquiteto de Soluções | Gestor Técnico</value>
   </data>
   <data name="Timeline_1_Company" xml:space="preserve">
-    <value>Empresa Europeia</value>
+    <value>Glintt Global</value>
   </data>
   <data name="Timeline_1_Period" xml:space="preserve">
-    <value>2023 - Presente</value>
+    <value>Jan 2023 - Presente</value>
   </data>
   <data name="Timeline_1_Description" xml:space="preserve">
-    <value>Arquitetura de microserviços, Blazor e plataformas cloud com foco em escalabilidade.</value>
+    <value>&lt;strong&gt;Arquiteto de Soluções&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Liderança técnica transversal às equipas, garantindo o uso das melhores práticas nos processos de desenvolvimento e implementação.&lt;/li&gt;&lt;li&gt;Arquitetura de soluções de software alojadas em Azure, otimizando a fiabilidade, a eficiência de custos e a segurança. Utilização de serviços como App Service Environments, Container Apps, Service Bus, Key Vault, Private Endpoints, VPN Gateways e Azure Defender.&lt;/li&gt;&lt;li&gt;Implementação de princípios Agile e DevOps nas equipas, promovendo a qualidade do código, revisões de pares, pipelines CI/CD e ativos de Infraestrutura como Código (Bicep, templates ARM).&lt;/li&gt;&lt;li&gt;Preparação e implementação de migrações para a cloud e atualização de versões de frameworks .NET e Single Page Application (SPA).&lt;/li&gt;&lt;li&gt;Análise de requisitos de negócio para fornecer especificações funcionais.&lt;/li&gt;&lt;/ul&gt;&lt;strong&gt;Gestor Técnico&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Desenvolvimento de documentos de proposta com diagramas de desenho arquitetural durante a fase de pré-venda.&lt;/li&gt;&lt;li&gt;Estimativa de prazos de entrega, planeamento de equipas e determinação de preços de venda para propostas de pré-venda.&lt;/li&gt;&lt;li&gt;Foco na satisfação da equipa em todos os projetos.&lt;/li&gt;&lt;li&gt;Desenvolvimento de planos de formação para os membros da equipa.&lt;/li&gt;&lt;li&gt;Análise de currículos de potenciais candidatos e realização de entrevistas técnicas.&lt;/li&gt;&lt;/ul&gt;</value>
   </data>
   <data name="Timeline_2_Title" xml:space="preserve">
-    <value>.NET Full Stack Engineer</value>
+    <value>Programador .NET Sénior</value>
   </data>
   <data name="Timeline_2_Company" xml:space="preserve">
-    <value>Consultoria Digital</value>
+    <value>Glintt Global</value>
   </data>
   <data name="Timeline_2_Period" xml:space="preserve">
-    <value>2020 - 2023</value>
+    <value>Fev 2021 - Dez 2022</value>
   </data>
   <data name="Timeline_2_Description" xml:space="preserve">
-    <value>Entrega de produtos web, APIs e experiências de design em projetos internacionais.</value>
+    <value>Arquiteto, Líder Técnico, Projetista de Sistemas e Programador de soluções de TI de alto desempenho são as principais funções.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Conquistas:&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Conceção de um sistema de comunicação para o setor bancário utilizando microsserviços e arquitetura orientada a eventos em Azure e .NET.&lt;/li&gt;&lt;li&gt;Atuação como Líder Técnico num sistema de máquina de estados para uma entidade pública, utilizando web apps e processos em background em Azure e .NET.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Timeline_3_Title" xml:space="preserve">
+    <value>Arquiteto | Programador .NET Sénior</value>
+  </data>
+  <data name="Timeline_3_Company" xml:space="preserve">
+    <value>X4DEV Business Solutions S.A.</value>
+  </data>
+  <data name="Timeline_3_Period" xml:space="preserve">
+    <value>Ago 2014 - Jan 2021</value>
+  </data>
+  <data name="Timeline_3_Description" xml:space="preserve">
+    <value>Arquiteto, analista e programador especializado na criação e manutenção de aplicações web e Windows.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Conquistas:&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Conceção e implementação de um sistema de máquina de estados para uma entidade pública, composto por web apps e processos em background, utilizando .NET Core em Azure.&lt;/li&gt;&lt;li&gt;Conceção e implementação de aplicações web de comércio eletrónico integradas com sistemas ERP de clientes, utilizando tecnologia .NET Core.&lt;/li&gt;&lt;li&gt;Conceção e implementação de uma aplicação de gestão de frotas utilizando tecnologia Microsoft (.NET Core e Bing Maps).&lt;/li&gt;&lt;li&gt;Conceção e implementação de portais de self-service para clientes.&lt;/li&gt;&lt;li&gt;Conceção e implementação de serviços de middleware para sistemas ERP utilizando REST com .NET Core.&lt;/li&gt;&lt;li&gt;Melhoria do produto da empresa “Warehouse System Solution” através da introdução de novas ideias e funcionalidades, bem como da resolução de problemas existentes.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Timeline_4_Title" xml:space="preserve">
+    <value>Analista Programador</value>
+  </data>
+  <data name="Timeline_4_Company" xml:space="preserve">
+    <value>Novabase</value>
+  </data>
+  <data name="Timeline_4_Period" xml:space="preserve">
+    <value>Fev 2007 - Mai 2014</value>
+  </data>
+  <data name="Timeline_4_Description" xml:space="preserve">
+    <value>Analista, arquiteto e programador de aplicações web, focados principalmente em sites empresariais da Vodafone. Ocasionalmente, gestão de pequenas equipas através da distribuição de tarefas e supervisão do trabalho realizado pelos colegas.</value>
   </data>
   <data name="Skill_1" xml:space="preserve">
     <value>Azure</value>

@@ -47,28 +47,52 @@
     <value>Bachelor's degree with focus on distributed systems and web development.</value>
   </data>
   <data name="Timeline_1_Title" xml:space="preserve">
-    <value>Senior .NET Engineer</value>
+    <value>Solutions Architect | Technical Manager</value>
   </data>
   <data name="Timeline_1_Company" xml:space="preserve">
-    <value>European Company</value>
+    <value>Glintt Global</value>
   </data>
   <data name="Timeline_1_Period" xml:space="preserve">
-    <value>2023 - Present</value>
+    <value>Jan 2023 - Present</value>
   </data>
   <data name="Timeline_1_Description" xml:space="preserve">
-    <value>Architecting microservices, Blazor, and cloud platforms with scalability in mind.</value>
+    <value>&lt;strong&gt;Solutions Architect&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Provide technical leadership across teams, ensuring the use of best practices in development and deployment processes.&lt;/li&gt;&lt;li&gt;Architect Azure-hosted software solutions, optimizing for reliability, cost-efficiency, and security. Utilize services like App Service Environments, Container Apps, Service Bus, Key Vault, Private Endpoints, VPN Gateways, and Azure Defender.&lt;/li&gt;&lt;li&gt;Implement Agile &amp; DevOps principles within teams by promoting code quality, peer reviews, CI/CD pipelines, and Infrastructure as Code assets (Bicep, ARM templates).&lt;/li&gt;&lt;li&gt;Prepare and deploy cloud migrations, and upgrade .NET and Single Page Application (SPA) framework versions.&lt;/li&gt;&lt;li&gt;Analyze business requirements to provide functional specifications.&lt;/li&gt;&lt;/ul&gt;&lt;strong&gt;Technical Manager&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Develop proposal documents with architectural design diagrams during pre-sales.&lt;/li&gt;&lt;li&gt;Estimate delivery timelines, plan teams, and determine sales prices for pre-sales proposals.&lt;/li&gt;&lt;li&gt;Focus on team satisfaction across projects.&lt;/li&gt;&lt;li&gt;Develop training plans for team members.&lt;/li&gt;&lt;li&gt;Analyze potential candidates' resumes and conduct technical interviews.&lt;/li&gt;&lt;/ul&gt;</value>
   </data>
   <data name="Timeline_2_Title" xml:space="preserve">
-    <value>.NET Full Stack Engineer</value>
+    <value>Senior .NET Developer</value>
   </data>
   <data name="Timeline_2_Company" xml:space="preserve">
-    <value>Digital Consultancy</value>
+    <value>Glintt Global</value>
   </data>
   <data name="Timeline_2_Period" xml:space="preserve">
-    <value>2020 - 2023</value>
+    <value>Feb 2021 - Dec 2022</value>
   </data>
   <data name="Timeline_2_Description" xml:space="preserve">
-    <value>Delivered web products, APIs, and design-led experiences for global clients.</value>
+    <value>Architect, Tech Lead, System Designer, Developer of high-performance IT solutions are the main roles.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Accomplishments:&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Designed a communication system for the banking sector using microservices and event-driven architecture on Azure and .NET.&lt;/li&gt;&lt;li&gt;Served as Tech Lead for a state machine system for a public entity, utilizing web apps and background processes on Azure and .NET.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Timeline_3_Title" xml:space="preserve">
+    <value>Architect | Senior .NET Developer</value>
+  </data>
+  <data name="Timeline_3_Company" xml:space="preserve">
+    <value>X4DEV Business Solutions S.A.</value>
+  </data>
+  <data name="Timeline_3_Period" xml:space="preserve">
+    <value>Aug 2014 - Jan 2021</value>
+  </data>
+  <data name="Timeline_3_Description" xml:space="preserve">
+    <value>Architect, analyst, and developer specializing in the creation and maintenance of web and Windows applications.&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;Accomplishments:&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;Designed and implemented a state machine system for a public entity, comprised of web apps and background processes, using .NET Core in Azure.&lt;/li&gt;&lt;li&gt;Designed and implemented e-commerce web applications integrated with ERP customer systems, utilizing .NET Core technology.&lt;/li&gt;&lt;li&gt;Designed and implemented a fleet management system application using Microsoft technology (.NET Core and Bing Maps).&lt;/li&gt;&lt;li&gt;Designed and implemented customer self-service portals.&lt;/li&gt;&lt;li&gt;Designed and implemented middleware services for ERP systems using REST with .NET Core.&lt;/li&gt;&lt;li&gt;Improved the company product “Warehouse System Solution” by introducing new ideas and features, as well as resolving existing issues.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Timeline_4_Title" xml:space="preserve">
+    <value>Professional</value>
+  </data>
+  <data name="Timeline_4_Company" xml:space="preserve">
+    <value>Novabase</value>
+  </data>
+  <data name="Timeline_4_Period" xml:space="preserve">
+    <value>Feb 2007 - May 2014</value>
+  </data>
+  <data name="Timeline_4_Description" xml:space="preserve">
+    <value>Analyst, architect, and developer of web applications, primarily focused on Vodafone enterprise sites. Occasionally managed small teams by delivering tasks and supervising the work completed by colleagues.</value>
   </data>
   <data name="Skill_1" xml:space="preserve">
     <value>Azure</value>

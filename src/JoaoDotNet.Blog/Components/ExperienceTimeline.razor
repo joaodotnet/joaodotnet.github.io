@@ -6,7 +6,7 @@
             <div class="timeline-content">
                 <h3>@item.Title</h3>
                 <p class="timeline-meta">@item.Company · @item.Period</p>
-                <p class="timeline-body">@item.Description</p>
+                <div class="timeline-body">@((MarkupString)item.Description)</div>
             </div>
         </div>
     }
