@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Arquiteto de Soluções | Gestor Técnico",
+    "company": "Glintt Global",
+    "period": "Jan 2023 - Presente",
+    "description": "<strong>Arquiteto de Soluções</strong><ul><li>Liderança técnica transversal às equipas, garantindo o uso das melhores práticas nos processos de desenvolvimento e implementação.</li><li>Arquitetura de soluções de software alojadas em Azure, otimizando a fiabilidade, a eficiência de custos e a segurança. Utilização de serviços como App Service Environments, Container Apps, Service Bus, Key Vault, Private Endpoints, VPN Gateways e Azure Defender.</li><li>Implementação de princípios Agile e DevOps nas equipas, promovendo a qualidade do código, revisões de pares, pipelines CI/CD e ativos de Infraestrutura como Código (Bicep, templates ARM).</li><li>Preparação e implementação de migrações para a cloud e atualização de versões de frameworks .NET e Single Page Application (SPA).</li><li>Análise de requisitos de negócio para fornecer especificações funcionais.</li></ul><strong>Gestor Técnico</strong><ul><li>Desenvolvimento de documentos de proposta com diagramas de desenho arquitetural durante a fase de pré-venda.</li><li>Estimativa de prazos de entrega, planeamento de equipas e determinação de preços de venda para propostas de pré-venda.</li><li>Foco na satisfação da equipa em todos os projetos.</li><li>Desenvolvimento de planos de formação para os membros da equipa.</li><li>Análise de currículos de potenciais candidatos e realização de entrevistas técnicas.</li></ul>"
+  },
+  {
+    "title": "Programador .NET Sénior",
+    "company": "Glintt Global",
+    "period": "Fev 2021 - Dez 2022",
+    "description": "Arquiteto, Líder Técnico, Projetista de Sistemas e Programador de soluções de TI de alto desempenho são as principais funções.<br/><br/><strong>Conquistas:</strong><ul><li>Conceção de um sistema de comunicação para o setor bancário utilizando microsserviços e arquitetura orientada a eventos em Azure e .NET.</li><li>Atuação como Líder Técnico num sistema de máquina de estados para uma entidade pública, utilizando web apps e processos em background em Azure e .NET.</li></ul>"
+  },
+  {
+    "title": "Arquiteto | Programador .NET Sénior",
+    "company": "X4DEV Business Solutions S.A.",
+    "period": "Ago 2014 - Jan 2021",
+    "description": "Arquiteto, analista e programador especializado na criação e manutenção de aplicações web e Windows.<br/><br/><strong>Conquistas:</strong><ul><li>Conceção e implementação de um sistema de máquina de estados para uma entidade pública, composto por web apps e processos em background, utilizando .NET Core em Azure.</li><li>Conceção e implementação de aplicações web de comércio eletrónico integradas com sistemas ERP de clientes, utilizando tecnologia .NET Core.</li><li>Conceção e implementação de uma aplicação de gestão de frotas utilizando tecnologia Microsoft (.NET Core e Bing Maps).</li><li>Conceção e implementação de portais de self-service para clientes.</li><li>Conceção e implementação de serviços de middleware para sistemas ERP utilizando REST com .NET Core.</li><li>Melhoria do produto da empresa \"Warehouse System Solution\" através da introdução de novas ideias e funcionalidades, bem como da resolução de problemas existentes.</li></ul>"
+  },
+  {
+    "title": "Analista Programador",
+    "company": "Edigma – Sistemas de Informação, S.A.",
+    "period": "Set 2011 - Jul 2014",
+    "description": "Responsável pela criação de aplicações web e Windows, manutenção de produtos Edigma existentes e formação de novos colaboradores.<br/><br/><strong>Conquistas:</strong><ul><li>Conceção e implementação de portais web para comércio eletrónico integrados com sistemas ERP de clientes.</li><li>Conceção e implementação de portais de self-service para clientes integrados com sistemas ERP.</li><li>Manutenção e melhoria do produto Edigma ERP e Warehouse System Solution, através da introdução de novas ideias e funcionalidades, bem como da resolução de problemas existentes.</li></ul>"
+  }
+]
