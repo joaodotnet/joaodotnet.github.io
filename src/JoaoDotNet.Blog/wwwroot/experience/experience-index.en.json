@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Solutions Architect | Technical Manager",
+    "company": "Glintt Global",
+    "period": "Jan 2023 - Present",
+    "description": "<strong>Solutions Architect</strong><ul><li>Provide technical leadership across teams, ensuring the use of best practices in development and deployment processes.</li><li>Architect Azure-hosted software solutions, optimizing for reliability, cost-efficiency, and security. Utilize services like App Service Environments, Container Apps, Service Bus, Key Vault, Private Endpoints, VPN Gateways, and Azure Defender.</li><li>Implement Agile & DevOps principles within teams by promoting code quality, peer reviews, CI/CD pipelines, and Infrastructure as Code assets (Bicep, ARM templates).</li><li>Prepare and deploy cloud migrations, and upgrade .NET and Single Page Application (SPA) framework versions.</li><li>Analyze business requirements to provide functional specifications.</li></ul><strong>Technical Manager</strong><ul><li>Develop proposal documents with architectural design diagrams during pre-sales.</li><li>Estimate delivery timelines, plan teams, and determine sales prices for pre-sales proposals.</li><li>Focus on team satisfaction across projects.</li><li>Develop training plans for team members.</li><li>Analyze potential candidates' resumes and conduct technical interviews.</li></ul>"
+  },
+  {
+    "title": "Senior .NET Developer",
+    "company": "Glintt Global",
+    "period": "Feb 2021 - Dec 2022",
+    "description": "Architect, Tech Lead, System Designer, Developer of high-performance IT solutions are the main roles.<br/><br/><strong>Accomplishments:</strong><ul><li>Designed a communication system for the banking sector using microservices and event-driven architecture on Azure and .NET.</li><li>Served as Tech Lead for a state machine system for a public entity, utilizing web apps and background processes on Azure and .NET.</li></ul>"
+  },
+  {
+    "title": "Architect | Senior .NET Developer",
+    "company": "X4DEV Business Solutions S.A.",
+    "period": "Aug 2014 - Jan 2021",
+    "description": "Architect, analyst, and developer specializing in the creation and maintenance of web and Windows applications.<br/><br/><strong>Accomplishments:</strong><ul><li>Designed and implemented a state machine system for a public entity, comprised of web apps and background processes, using .NET Core in Azure.</li><li>Designed and implemented e-commerce web applications integrated with ERP customer systems, utilizing .NET Core technology.</li><li>Designed and implemented a fleet management system application using Microsoft technology (.NET Core and Bing Maps).</li><li>Designed and implemented customer self-service portals.</li><li>Designed and implemented middleware services for ERP systems using REST with .NET Core.</li><li>Improved the company product “Warehouse System Solution” by introducing new ideas and features, as well as resolving existing issues.</li></ul>"
+  },
+  {
+    "title": "Professional",
+    "company": "Novabase",
+    "period": "Feb 2007 - May 2014",
+    "description": "Analyst, architect, and developer of web applications, primarily focused on Vodafone enterprise sites. Occasionally managed small teams by delivering tasks and supervising the work completed by colleagues."
+  }
+]

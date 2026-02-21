@@ -1,5 +1,6 @@
 @page "/about"
 @inject Microsoft.Extensions.Localization.IStringLocalizer<About> Localizer
+@inject JoaoDotNet.Blog.Services.ExperienceService ExperienceService
 
 <PageTitle>@Localizer["PageTitle"]</PageTitle>
 
@@ -60,39 +61,9 @@
     private IReadOnlyList<string> skills = Array.Empty<string>();
     private IReadOnlyList<string> certifications = Array.Empty<string>();
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        timelineItems = new List<TimelineEntry>
-        {
-            new()
-            {
-                Title = Localizer["Timeline_1_Title"],
-                Company = Localizer["Timeline_1_Company"],
-                Period = Localizer["Timeline_1_Period"],
-                Description = Localizer["Timeline_1_Description"]
-            },
-            new()
-            {
-                Title = Localizer["Timeline_2_Title"],
-                Company = Localizer["Timeline_2_Company"],
-                Period = Localizer["Timeline_2_Period"],
-                Description = Localizer["Timeline_2_Description"]
-            },
-            new()
-            {
-                Title = Localizer["Timeline_3_Title"],
-                Company = Localizer["Timeline_3_Company"],
-                Period = Localizer["Timeline_3_Period"],
-                Description = Localizer["Timeline_3_Description"]
-            },
-            new()
-            {
-                Title = Localizer["Timeline_4_Title"],
-                Company = Localizer["Timeline_4_Company"],
-                Period = Localizer["Timeline_4_Period"],
-                Description = Localizer["Timeline_4_Description"]
-            }
-        };
+        timelineItems = await ExperienceService.GetExperiencesAsync();
 
         skills = new List<string>
         {
