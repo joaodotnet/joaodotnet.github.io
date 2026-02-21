@@ -1,6 +1,8 @@
 @page "/about"
+@using JoaoDotNet.Blog.Models
 @inject Microsoft.Extensions.Localization.IStringLocalizer<About> Localizer
 @inject JoaoDotNet.Blog.Services.ExperienceService ExperienceService
+@inject JoaoDotNet.Blog.Services.CertificationService CertificationService
 
 <PageTitle>@Localizer["PageTitle"]</PageTitle>
 
@@ -38,10 +40,13 @@
     <div class="section-header">
         <h2>@Localizer["Section_Certifications"]</h2>
     </div>
-    <div class="card-grid">
+    <div class="certifications-grid">
         @foreach (var certification in certifications)
         {
-            <div class="info-card">@certification</div>
+            <div class="certification-card">
+                <img src="@certification.ImageUrl" alt="@certification.Name" class="certification-badge" />
+                <h3 class="certification-name">@certification.Name</h3>
+            </div>
         }
     </div>
 </section>
@@ -59,11 +64,12 @@
 @code {
     private IReadOnlyList<TimelineEntry> timelineItems = Array.Empty<TimelineEntry>();
     private IReadOnlyList<string> skills = Array.Empty<string>();
-    private IReadOnlyList<string> certifications = Array.Empty<string>();
+    private IReadOnlyList<Certification> certifications = Array.Empty<Certification>();
 
     protected override async Task OnInitializedAsync()
     {
         timelineItems = await ExperienceService.GetExperiencesAsync();
+        certifications = await CertificationService.GetCertificationsAsync();
 
         skills = new List<string>
         {
@@ -76,13 +82,6 @@
             Localizer["Skill_7"],
             Localizer["Skill_8"],
             Localizer["Skill_9"]
-        };
-
-        certifications = new List<string>
-        {
-            Localizer["Cert_1"],
-            Localizer["Cert_2"],
-            Localizer["Cert_3"]
         };
     }
 }

@@ -14,6 +14,7 @@ builder.Services.AddScoped<BlogService>();
 builder.Services.AddScoped<SearchService>();
 builder.Services.AddScoped<CultureService>();
 builder.Services.AddScoped<ExperienceService>();
+builder.Services.AddScoped<CertificationService>();
 
 var host = builder.Build();
 

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Microsoft Certified: Azure Security Engineer Associate",
+    "imageUrl": "images/certifications/azure-security-engineer-associate.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Solutions Architect Expert",
+    "imageUrl": "images/certifications/azure-solutions-architect-expert.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: DevOps Engineer Expert",
+    "imageUrl": "images/certifications/devops-engineer-expert.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+    "imageUrl": "images/certifications/azure-cosmos-db-developer-specialty.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Administrator Associate",
+    "imageUrl": "images/certifications/azure-administrator-associate.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Developer Associate",
+    "imageUrl": "images/certifications/azure-developer-associate.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Fundamentals",
+    "imageUrl": "images/certifications/azure-fundamentals.svg",
+    "credentialUrl": ""
+  }
+]
