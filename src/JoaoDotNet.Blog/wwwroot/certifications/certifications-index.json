@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+    "category": "Specialty",
+    "order": 1,
+    "imageUrl": "images/certifications/microsoft-certified-specialty-badge.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Solutions Architect Expert",
+    "category": "Expert",
+    "order": 1,
+    "imageUrl": "images/certifications/microsoft-certified-expert-badge.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: DevOps Engineer Expert",
+    "category": "Expert",
+    "order": 2,
+    "imageUrl": "images/certifications/microsoft-certified-expert-badge.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps",
+    "category": "AppliedSkills",
+    "order": 1,
+    "imageUrl": "images/certifications/applied-skill.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Security Engineer Associate",
+    "category": "Associate",
+    "order": 1,
+    "imageUrl": "images/certifications/microsoft-certified-associate-badge.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Administrator Associate",
+    "category": "Associate",
+    "order": 2,
+    "imageUrl": "images/certifications/microsoft-certified-associate-badge.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Developer Associate",
+    "category": "Associate",
+    "order": 3,
+    "imageUrl": "images/certifications/microsoft-certified-associate-badge.svg",
+    "credentialUrl": ""
+  },
+  {
+    "name": "Microsoft Certified: Azure Fundamentals",
+    "category": "Fundamentals",
+    "order": 1,
+    "imageUrl": "images/certifications/microsoft-certified-fundamentals-badge.svg",
+    "credentialUrl": ""
+  }
+]
