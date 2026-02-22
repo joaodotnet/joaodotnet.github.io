@@ -1,4 +1,3 @@
-using System.Globalization;
 using System.Net.Http.Json;
 using System.Text.Json;
 using JoaoDotNet.Blog.Models;
@@ -8,44 +7,29 @@ namespace JoaoDotNet.Blog.Services;
 public sealed class CertificationService
 {
     private readonly HttpClient httpClient;
-    private readonly CultureService cultureService;
-    private readonly Dictionary<string, IReadOnlyList<Certification>> cache = new(StringComparer.OrdinalIgnoreCase);
+    private IReadOnlyList<Certification>? cache;
 
-    public CertificationService(HttpClient httpClient, CultureService cultureService)
+    public CertificationService(HttpClient httpClient)
     {
         this.httpClient = httpClient;
-        this.cultureService = cultureService;
     }
 
     public async Task<IReadOnlyList<Certification>> GetCertificationsAsync()
     {
-        var cultureCode = GetCultureCode();
-        if (cache.TryGetValue(cultureCode, out var certifications))
+        if (cache is not null)
         {
-            return certifications;
+            return cache;
         }
 
-        var loadedCertifications = await TryLoadCertificationsAsync(cultureCode);
-
-        if (loadedCertifications.Count == 0 && !string.Equals(cultureCode, "en", StringComparison.OrdinalIgnoreCase))
-        {
-            loadedCertifications = await TryLoadCertificationsAsync("en");
-        }
-
-        if (loadedCertifications.Count == 0 && !string.Equals(cultureCode, "pt", StringComparison.OrdinalIgnoreCase))
-        {
-            loadedCertifications = await TryLoadCertificationsAsync("pt");
-        }
-
-        cache[cultureCode] = loadedCertifications;
-        return loadedCertifications;
+        cache = await TryLoadCertificationsAsync();
+        return cache;
     }
 
-    private async Task<List<Certification>> TryLoadCertificationsAsync(string cultureCode)
+    private async Task<List<Certification>> TryLoadCertificationsAsync()
     {
         try
         {
-            var indexPath = $"certifications/certifications-index.{cultureCode}.json";
+            var indexPath = "certifications/certifications-index.json";
             return await httpClient.GetFromJsonAsync<List<Certification>>(indexPath) ?? [];
         }
         catch (HttpRequestException)
@@ -60,16 +44,5 @@ public sealed class CertificationService
         {
             return [];
         }
-    }
-
-    private string GetCultureCode()
-    {
-        if (cultureService.IsPortuguese)
-        {
-            return "pt";
-        }
-
-        var cultureName = CultureInfo.CurrentUICulture.Name;
-        return cultureName.StartsWith("pt", StringComparison.OrdinalIgnoreCase) ? "pt" : "en";
     }
 }

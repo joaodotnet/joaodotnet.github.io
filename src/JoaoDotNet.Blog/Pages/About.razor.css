@@ -1,8 +1,21 @@
+.certification-groups {
+    display: grid;
+    gap: 2rem;
+}
+
+.certification-group-title {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .certification-card {
@@ -11,15 +24,17 @@
     align-items: center;
     text-align: center;
     padding: 1.5rem;
-    background: var(--card-background, #ffffff);
+    background: var(--surface-elevated);
+    border: 1px solid var(--border);
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .certification-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
 }
 
 .certification-badge {
@@ -32,12 +47,16 @@
 .certification-name {
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--text-primary, #333333);
+    color: var(--text-primary);
     margin: 0;
     line-height: 1.4;
 }
 
 @media (max-width: 768px) {
+    .certification-groups {
+        gap: 1.5rem;
+    }
+
     .certifications-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 1.5rem;

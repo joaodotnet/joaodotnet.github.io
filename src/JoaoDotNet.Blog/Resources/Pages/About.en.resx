@@ -37,6 +37,21 @@
   <data name="Section_Certifications" xml:space="preserve">
     <value>Certifications</value>
   </data>
+  <data name="CertificationGroup_Specialty" xml:space="preserve">
+    <value>Specialty</value>
+  </data>
+  <data name="CertificationGroup_Expert" xml:space="preserve">
+    <value>Expert</value>
+  </data>
+  <data name="CertificationGroup_AppliedSkills" xml:space="preserve">
+    <value>Applied Skills</value>
+  </data>
+  <data name="CertificationGroup_Associate" xml:space="preserve">
+    <value>Associate</value>
+  </data>
+  <data name="CertificationGroup_Fundamentals" xml:space="preserve">
+    <value>Fundamentals</value>
+  </data>
   <data name="Section_Education" xml:space="preserve">
     <value>Education</value>
   </data>

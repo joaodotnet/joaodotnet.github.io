@@ -31,24 +31,32 @@
 
 <section class="section">
     <div class="section-header">
-        <h2>@Localizer["Section_Experience"]</h2>
+        <h2>@Localizer["Section_Certifications"]</h2>
     </div>
-    <ExperienceTimeline Items="@timelineItems" />
+    <div class="certification-groups">
+        @foreach (var group in certificationGroups)
+        {
+            <div class="certification-group">
+                <h3 class="certification-group-title">@group.Title</h3>
+                <div class="certifications-grid">
+                    @foreach (var certification in group.Items)
+                    {
+                        <div class="certification-card">
+                            <img src="@certification.ImageUrl" alt="@certification.Name" class="certification-badge" />
+                            <h4 class="certification-name">@certification.Name</h4>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
 </section>
 
 <section class="section">
     <div class="section-header">
-        <h2>@Localizer["Section_Certifications"]</h2>
+        <h2>@Localizer["Section_Experience"]</h2>
     </div>
-    <div class="certifications-grid">
-        @foreach (var certification in certifications)
-        {
-            <div class="certification-card">
-                <img src="@certification.ImageUrl" alt="@certification.Name" class="certification-badge" />
-                <h3 class="certification-name">@certification.Name</h3>
-            </div>
-        }
-    </div>
+    <ExperienceTimeline Items="@timelineItems" />
 </section>
 
 <section class="section">
@@ -62,14 +70,18 @@
 </section>
 
 @code {
+    private static readonly string[] certificationCategoryOrder = ["Specialty", "Expert", "Associate", "Fundamentals", "AppliedSkills"];
+
     private IReadOnlyList<TimelineEntry> timelineItems = Array.Empty<TimelineEntry>();
     private IReadOnlyList<string> skills = Array.Empty<string>();
     private IReadOnlyList<Certification> certifications = Array.Empty<Certification>();
+    private IReadOnlyList<CertificationGroup> certificationGroups = Array.Empty<CertificationGroup>();
 
     protected override async Task OnInitializedAsync()
     {
         timelineItems = await ExperienceService.GetExperiencesAsync();
         certifications = await CertificationService.GetCertificationsAsync();
+        certificationGroups = BuildCertificationGroups(certifications);
 
         skills = new List<string>
         {
@@ -84,4 +96,56 @@
             Localizer["Skill_9"]
         };
     }
+
+    private IReadOnlyList<CertificationGroup> BuildCertificationGroups(IReadOnlyList<Certification> items)
+    {
+        return certificationCategoryOrder
+            .Select(category =>
+            {
+                var groupedItems = items
+                    .Where(certification => string.Equals(ResolveCertificationCategory(certification), category, StringComparison.OrdinalIgnoreCase))
+                    .OrderBy(certification => certification.Order ?? int.MaxValue)
+                    .ThenBy(certification => certification.Name, StringComparer.CurrentCultureIgnoreCase)
+                    .ToList();
+
+                return new CertificationGroup(
+                    category,
+                    Localizer[$"CertificationGroup_{category}"],
+                    groupedItems);
+            })
+            .Where(group => group.Items.Count > 0)
+            .ToList();
+    }
+
+    private static string ResolveCertificationCategory(Certification certification)
+    {
+        if (!string.IsNullOrWhiteSpace(certification.Category))
+        {
+            return certification.Category;
+        }
+
+        if (certification.Name.Contains("Applied Skills", StringComparison.OrdinalIgnoreCase))
+        {
+            return "AppliedSkills";
+        }
+
+        if (certification.Name.Contains("Specialty", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Specialty";
+        }
+
+        if (certification.Name.Contains("Expert", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Expert";
+        }
+
+        if (certification.Name.Contains("Fundamentals", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Fundamentals";
+        }
+
+        return "Associate";
+    }
+
+    private sealed record CertificationGroup(string Category, string Title, IReadOnlyList<Certification> Items);
 }
