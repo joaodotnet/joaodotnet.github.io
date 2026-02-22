@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>This site uses privacy-focused traffic analytics to understand general usage trends and improve published technical content.</value>
+  </data>
+  <data name="Section_Analytics_Title" xml:space="preserve">
+    <value>Traffic analytics</value>
+  </data>
+  <data name="Section_Analytics_Body" xml:space="preserve">
+    <value>We use Umami to measure visits, unique visitors, most viewed pages, and traffic sources across periods such as 7 and 30 days.</value>
+  </data>
+  <data name="Section_Data_Title" xml:space="preserve">
+    <value>Data processed</value>
+  </data>
+  <data name="Section_Data_Body" xml:space="preserve">
+    <value>The applied setup is data-minimization oriented and does not rely on a cookie popup for normal site operation.</value>
+  </data>
+  <data name="Section_Rights_Title" xml:space="preserve">
+    <value>Rights and GDPR</value>
+  </data>
+  <data name="Section_Rights_Body" xml:space="preserve">
+    <value>If you are in the European Union, your GDPR rights remain applicable. If you have privacy questions, please get in touch.</value>
+  </data>
+  <data name="Section_Contact_Title" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Section_Contact_Body" xml:space="preserve">
+    <value>You can reach me through the profile links and professional channels available on this site.</value>
+  </data>
+</root>

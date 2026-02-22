@@ -517,6 +517,15 @@ a {
     flex-wrap: wrap;
 }
 
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
 #blazor-error-ui {
     color-scheme: dark;
     background: rgba(10, 10, 10, 0.9);

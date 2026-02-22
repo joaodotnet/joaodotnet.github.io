@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Política de Privacidade</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>Este site usa análise de tráfego focada em privacidade para entender tendências gerais de utilização e melhorar os conteúdos técnicos publicados.</value>
+  </data>
+  <data name="Section_Analytics_Title" xml:space="preserve">
+    <value>Análise de tráfego</value>
+  </data>
+  <data name="Section_Analytics_Body" xml:space="preserve">
+    <value>Utilizamos o Umami para medir visitas, visitantes únicos, páginas mais vistas e origem de tráfego em períodos como 7 e 30 dias.</value>
+  </data>
+  <data name="Section_Data_Title" xml:space="preserve">
+    <value>Dados tratados</value>
+  </data>
+  <data name="Section_Data_Body" xml:space="preserve">
+    <value>A configuração aplicada é orientada à minimização de dados e não depende de pop-up de cookies para funcionamento normal do site.</value>
+  </data>
+  <data name="Section_Rights_Title" xml:space="preserve">
+    <value>Direitos e RGPD</value>
+  </data>
+  <data name="Section_Rights_Body" xml:space="preserve">
+    <value>Se estiveres na União Europeia, os teus direitos ao abrigo do RGPD mantêm-se. Se tiveres questões sobre privacidade, entra em contacto.</value>
+  </data>
+  <data name="Section_Contact_Title" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="Section_Contact_Body" xml:space="preserve">
+    <value>Podes contactar-me através dos links de perfil e canais profissionais disponíveis neste site.</value>
+  </data>
+</root>

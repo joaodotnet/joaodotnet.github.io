@@ -1,0 +1,25 @@
+@page "/privacy"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Privacy> Localizer
+
+<PageTitle>@Localizer["PageTitle"]</PageTitle>
+
+<section class="section">
+    <div class="section-header">
+        <h1>@Localizer["Title"]</h1>
+    </div>
+
+    <div class="info-card">
+        <p>@Localizer["Intro"]</p>
+        <h2>@Localizer["Section_Analytics_Title"]</h2>
+        <p>@Localizer["Section_Analytics_Body"]</p>
+
+        <h2>@Localizer["Section_Data_Title"]</h2>
+        <p>@Localizer["Section_Data_Body"]</p>
+
+        <h2>@Localizer["Section_Rights_Title"]</h2>
+        <p>@Localizer["Section_Rights_Body"]</p>
+
+        <h2>@Localizer["Section_Contact_Title"]</h2>
+        <p>@Localizer["Section_Contact_Body"]</p>
+    </div>
+</section>

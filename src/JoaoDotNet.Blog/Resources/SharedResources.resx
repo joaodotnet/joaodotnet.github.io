@@ -21,6 +21,9 @@
   <data name="Nav_About" xml:space="preserve">
     <value>Sobre Mim</value>
   </data>
+  <data name="Nav_Privacy" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
   <data name="Footer_Rights" xml:space="preserve">
     <value>Todos os direitos reservados.</value>
   </data>
