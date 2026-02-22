@@ -52,6 +52,32 @@
     line-height: 1.4;
 }
 
+.education-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.education-meta-item {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    background: var(--surface);
+}
+
+.education-meta-item h4 {
+    margin: 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+}
+
+.education-meta-item p {
+    margin: 0.35rem 0 0;
+}
+
 @media (max-width: 768px) {
     .certification-groups {
         gap: 1.5rem;
@@ -69,5 +95,10 @@
     
     .certification-name {
         font-size: 0.85rem;
+    }
+
+    .education-meta-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
 }

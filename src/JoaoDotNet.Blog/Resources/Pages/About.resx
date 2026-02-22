@@ -19,7 +19,7 @@
     <value>Arquiteto de Soluções .NET</value>
   </data>
   <data name="Hero_Title" xml:space="preserve">
-    <value>Olá, sou o Joao Goncalves</value>
+    <value>Olá, sou o João Gonçalves</value>
   </data>
   <data name="Hero_Subtitle" xml:space="preserve">
     <value>Profissional com mais de 18 anos de experiência na conceção e implementação de soluções de TI de alto desempenho.</value>
@@ -55,10 +55,22 @@
     <value>Formação</value>
   </data>
   <data name="Education_Title" xml:space="preserve">
-    <value>Engenharia Informática</value>
+    <value>Licenciatura Informática - Ramo Gestão</value>
+  </data>
+  <data name="Education_Dates_Label" xml:space="preserve">
+    <value>Datas</value>
+  </data>
+  <data name="Education_Dates" xml:space="preserve">
+    <value>01/2002 - 09/2006</value>
+  </data>
+  <data name="Education_School_Label" xml:space="preserve">
+    <value>Instituição</value>
+  </data>
+  <data name="Education_School" xml:space="preserve">
+    <value>Universidade do Algarve</value>
   </data>
   <data name="Education_Body" xml:space="preserve">
-    <value>Licenciatura com foco em sistemas distribuídos e desenvolvimento web.</value>
+    <value>A maior parte do meu percurso académico foi focada em Ciência e Tecnologia, com disciplinas adicionais em Gestão Empresarial.</value>
   </data>
   <data name="Skill_1" xml:space="preserve">
     <value>Azure</value>
