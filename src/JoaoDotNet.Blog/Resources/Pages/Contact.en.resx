@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Intro" xml:space="preserve">
+    <value>I'm always available to discuss interesting projects, collaboration opportunities, or answer technical questions.</value>
+  </data>
+  <data name="Section_Email_Title" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Section_Email_Body" xml:space="preserve">
+    <value>The best way to reach me is via email:</value>
+  </data>
+  <data name="Section_Social_Title" xml:space="preserve">
+    <value>Professional Networks</value>
+  </data>
+  <data name="Section_Social_Body" xml:space="preserve">
+    <value>You can also find me on the following platforms:</value>
+  </data>
+  <data name="Section_Privacy_Title" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="Section_Privacy_Body" xml:space="preserve">
+    <value>This site does not collect or store any personal information through contact forms. When you send me an email, your data will be handled according to the privacy policy of the email service you use.</value>
+  </data>
+</root>
