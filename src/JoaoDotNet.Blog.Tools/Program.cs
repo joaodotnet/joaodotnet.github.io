@@ -28,8 +28,8 @@ var sitemapEntries = new List<SitemapEntry>
 
 foreach (var group in grouped)
 {
-	var pt = group.FirstOrDefault(post => post.Lang == "pt");
-	var en = group.FirstOrDefault(post => post.Lang == "en");
+	var pt = group.FirstOrDefault(post => post.Lang == "pt" && !post.Hidden);
+	var en = group.FirstOrDefault(post => post.Lang == "en" && !post.Hidden);
 
 	if (pt is not null)
 	{
@@ -101,7 +101,8 @@ static List<PostSource> LoadPosts(string postsPath)
 			Slug: frontMatter.Slug ?? slug,
 			Lang: string.IsNullOrWhiteSpace(frontMatter.Lang) ? language : frontMatter.Lang,
 			CoverImage: frontMatter.CoverImage ?? string.Empty,
-			ReadTimeMinutes: readTime));
+			ReadTimeMinutes: readTime,
+			Hidden: frontMatter.Hidden ?? false));
 	}
 
 	return posts;
@@ -158,7 +159,8 @@ sealed record PostSource(
 	string Slug,
 	string Lang,
 	string CoverImage,
-	int ReadTimeMinutes);
+	int ReadTimeMinutes,
+	bool Hidden);
 
 sealed class PostFrontMatter
 {
@@ -169,6 +171,7 @@ sealed class PostFrontMatter
 	public string? Slug { get; init; }
 	public string? Lang { get; init; }
 	public string? CoverImage { get; init; }
+	public bool? Hidden { get; init; }
 }
 
 sealed class PostIndexEntry

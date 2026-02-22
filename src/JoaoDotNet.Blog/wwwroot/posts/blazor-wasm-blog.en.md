@@ -5,6 +5,7 @@ tags: [blazor, dotnet, wasm]
 summary: "Why I chose Blazor WASM for a personal blog and what I learned." 
 slug: blazor-wasm-blog
 lang: en
+hidden: true
 coverImage: /images/posts/blazor-wasm.jpg
 ---
 
