@@ -100,6 +100,9 @@
   <data name="Skill_9" xml:space="preserve">
     <value>DevOps practices</value>
   </data>
+  <data name="Skill_10" xml:space="preserve">
+    <value>Blazor</value>
+  </data>
   <data name="Cert_1" xml:space="preserve">
     <value>Microsoft Certified: Azure Developer Associate</value>
   </data>
