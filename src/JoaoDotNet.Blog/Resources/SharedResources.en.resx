@@ -39,4 +39,7 @@
   <data name="Language" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="Experience_Technologies" xml:space="preserve">
+    <value>Technologies</value>
+  </data>
 </root>

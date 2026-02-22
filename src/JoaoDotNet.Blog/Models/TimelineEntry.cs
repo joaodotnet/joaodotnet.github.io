@@ -6,4 +6,5 @@ public sealed record TimelineEntry
     public string Company { get; init; } = string.Empty;
     public string Period { get; init; } = string.Empty;
     public string Description { get; init; } = string.Empty;
+    public IReadOnlyList<string> Technologies { get; init; } = Array.Empty<string>();
 }

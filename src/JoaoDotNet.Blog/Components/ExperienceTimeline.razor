@@ -1,3 +1,5 @@
+@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResources> Localizer
+
 <section class="timeline">
     @foreach (var item in Items)
     {
@@ -7,6 +9,18 @@
                 <h3>@item.Title</h3>
                 <p class="timeline-meta">@item.Company · @item.Period</p>
                 <div class="timeline-body">@((MarkupString)item.Description)</div>
+                @if (item.Technologies.Count > 0)
+                {
+                    <div class="timeline-tech">
+                        <h4>@Localizer["Experience_Technologies"]</h4>
+                        <div class="timeline-tech-list">
+                            @foreach (var technology in item.Technologies)
+                            {
+                                <span class="timeline-tech-item">@technology</span>
+                            }
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     }

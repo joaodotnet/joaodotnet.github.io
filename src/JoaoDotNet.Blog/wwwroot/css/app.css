@@ -366,6 +366,36 @@ a {
     color: var(--text-secondary);
 }
 
+.timeline-body ul {
+    margin: 0.6rem 0;
+    padding-left: 1.2rem;
+}
+
+.timeline-tech {
+    margin-top: 0.5rem;
+}
+
+.timeline-tech h4 {
+    margin: 0 0 0.4rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.timeline-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.timeline-tech-item {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    background: var(--surface-elevated);
+}
+
 .chip-grid {
     display: flex;
     flex-wrap: wrap;
