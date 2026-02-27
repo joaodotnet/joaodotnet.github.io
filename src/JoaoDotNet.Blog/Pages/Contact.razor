@@ -1,0 +1,36 @@
+@page "/contact"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Contact> Localizer
+
+<PageTitle>@Localizer["PageTitle"]</PageTitle>
+
+<section class="section">
+    <div class="section-header">
+        <h1>@Localizer["Title"]</h1>
+    </div>
+
+    <div class="info-card">
+        <p>@Localizer["Intro"]</p>
+
+        <h2>@Localizer["Section_Email_Title"]</h2>
+        <p>
+            @Localizer["Section_Email_Body"]
+            <a href="mailto:joao.goncalves81@outlook.com" class="contact-email">joao.goncalves81@outlook.com</a>
+        </p>
+
+        <h2>@Localizer["Section_Social_Title"]</h2>
+        <p>@Localizer["Section_Social_Body"]</p>
+        <div class="contact-links">
+            <a href="https://github.com/joaodotnet" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile">
+                <span class="contact-link-icon" aria-hidden="true">🔗</span>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/goncajf/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">
+                <span class="contact-link-icon" aria-hidden="true">🔗</span>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+
+        <h2>@Localizer["Section_Privacy_Title"]</h2>
+        <p>@Localizer["Section_Privacy_Body"]</p>
+    </div>
+</section>

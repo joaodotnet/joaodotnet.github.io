@@ -21,6 +21,9 @@
   <data name="Nav_About" xml:space="preserve">
     <value>About Me</value>
   </data>
+  <data name="Nav_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
   <data name="Nav_Privacy" xml:space="preserve">
     <value>Privacy</value>
   </data>
