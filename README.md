@@ -4,6 +4,10 @@ A bilingual Blazor WebAssembly (.NET 10) personal blog for joaodotnet.github.io.
 Default language is Portuguese (pt-PT) with English as secondary. Blog posts are
 Markdown files stored in wwwroot/posts.
 
+## Screenshot
+
+![Home page screenshot](https://github.com/user-attachments/assets/a04acad2-d1c7-4ec8-979a-af0a04ce7e20)
+
 ## Why two projects
 
 - JoaoDotNet.Blog: the Blazor WASM client app (UI, routing, localization, blog UI)

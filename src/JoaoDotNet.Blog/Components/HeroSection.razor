@@ -7,10 +7,6 @@
             <a class="btn btn-primary" href="@PrimaryHref">@PrimaryText</a>
             <a class="btn btn-ghost" href="@SecondaryHref">@SecondaryText</a>
         </div>
-        @if (ChildContent is not null)
-        {
-            @ChildContent
-        }
     </div>
     <div class="hero-visual">
         <div class="hero-card">
@@ -33,6 +29,10 @@
             {
                 <p class="hero-card-title">@CardTitle</p>
                 <p class="hero-card-body">@CardBody</p>
+            }
+            @if (ChildContent is not null)
+            {
+                @ChildContent
             }
         </div>
     </div>
