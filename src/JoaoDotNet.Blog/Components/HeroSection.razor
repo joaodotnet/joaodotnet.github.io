@@ -34,6 +34,10 @@
                 <p class="hero-card-title">@CardTitle</p>
                 <p class="hero-card-body">@CardBody</p>
             }
+            @if (CardFooter is not null)
+            {
+                @CardFooter
+            }
         </div>
     </div>
 </section>
@@ -80,4 +84,7 @@
 
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public RenderFragment? CardFooter { get; set; }
 }
