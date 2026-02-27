@@ -7,6 +7,10 @@
             <a class="btn btn-primary" href="@PrimaryHref">@PrimaryText</a>
             <a class="btn btn-ghost" href="@SecondaryHref">@SecondaryText</a>
         </div>
+        @if (ChildContent is not null)
+        {
+            @ChildContent
+        }
     </div>
     <div class="hero-visual">
         <div class="hero-card">
@@ -29,6 +33,10 @@
             {
                 <p class="hero-card-title">@CardTitle</p>
                 <p class="hero-card-body">@CardBody</p>
+            }
+            @if (CardFooter is not null)
+            {
+                @CardFooter
             }
         </div>
     </div>
@@ -73,4 +81,10 @@
 
     [Parameter]
     public int? VisualImageHeight { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public RenderFragment? CardFooter { get; set; }
 }
