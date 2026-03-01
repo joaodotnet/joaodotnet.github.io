@@ -298,9 +298,20 @@ a {
 
 .about-hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+    grid-template-columns: auto minmax(0, 1fr) minmax(0, 0.85fr);
     gap: 1.5rem;
     align-items: start;
+}
+
+.about-profile-visual {
+    order: -1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mobile-visual {
+    display: none;
 }
 
 .about-copy {
@@ -325,6 +336,15 @@ a {
     border: 1px solid var(--border);
     padding: 1.4rem 1.6rem;
     border-radius: 1.2rem;
+}
+
+.about-profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 3px solid var(--border);
 }
 
 .about-card p {
@@ -631,6 +651,20 @@ a {
     .about-hero {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .about-profile-visual {
+        order: 0;
+    }
+
+    .mobile-visual {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .desktop-visual {
+        display: none;
     }
 
     .about-copy {

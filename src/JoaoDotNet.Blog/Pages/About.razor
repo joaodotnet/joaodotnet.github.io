@@ -10,8 +10,14 @@
     <div class="about-copy">
         <p class="hero-kicker">@Localizer["Hero_Kicker"]</p>
         <h1>@Localizer["Hero_Title"]</h1>
+        <div class="about-profile-visual mobile-visual">
+            <img src="images/profile.jpg" alt="@Localizer["Hero_Title"]" class="about-profile-image" width="400" height="400" fetchpriority="high" decoding="async" />
+        </div>
         <p class="hero-subtitle">@Localizer["Hero_Subtitle"]</p>
         <SocialLinks />
+    </div>
+    <div class="about-profile-visual desktop-visual">
+        <img src="images/profile.jpg" alt="@Localizer["Hero_Title"]" class="about-profile-image" width="400" height="400" fetchpriority="high" decoding="async" />
     </div>
     <div class="about-card">
         <p>@((MarkupString)Localizer["Bio_Intro"].Value)</p>
