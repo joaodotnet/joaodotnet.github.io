@@ -22,10 +22,10 @@
     <value>Olá, sou o João Gonçalves</value>
   </data>
   <data name="Hero_Subtitle" xml:space="preserve">
-    <value>Profissional com mais de 18 anos de experiência na conceção e implementação de soluções de TI de alto desempenho.</value>
+    <value>Profissional com mais de 18 anos de experiência na conceção de soluções de TI de alto desempenho, agora impulsionadas por Inteligência Artificial e agentes de desenvolvimento avançados.</value>
   </data>
   <data name="Bio_Intro" xml:space="preserve">
-    <value>Alia um profundo conhecimento técnico ao compromisso com as melhores práticas, traduzindo necessidades de negócio em arquiteturas robustas e escaláveis. Vasta experiência na liderança de equipas de desenvolvimento e na execução de projetos complexos em diversos setores de atividade, com especialização em tecnologias Microsoft como Azure, .NET, Blazor, Razor Pages, MVC, Entity Framework e SQL Server.&lt;br/&gt;&lt;br/&gt;Apaixonado pelo desenvolvimento de aplicações cloud-native no Azure, com foco em arquiteturas orientadas a eventos e desenvolvimento de microsserviços. Experiente em práticas de DevOps e proficiente tanto em back-end como em front-end, construindo aplicações web robustas e desenhando APIs RESTful que elevam a experiência do utilizador.</value>
+    <value>Alia um profundo conhecimento técnico ao compromisso com as melhores práticas, traduzindo necessidades de negócio em arquiteturas robustas e escaláveis. Vasta experiência na liderança de equipas e na execução de projetos complexos, com especialização em tecnologias Microsoft (.NET, Azure, Blazor). Apaixonado pelo desenvolvimento de aplicações cloud-native, microsserviços e desenvolvimento full-stack para construir aplicações web de alto desempenho e APIs RESTful.&lt;br/&gt;&lt;br/&gt;Recentemente, transformou os seus fluxos de trabalho de engenharia através da adoção intensiva de ferramentas avançadas de Inteligência Artificial. É um entusiasta do "vibe coding" e do "spec-driven development", utilizando o GitHub Copilot (com Spec-Kit) e o Claude Code. Possui experiência prática na orquestração de ecossistemas assistidos por IA e na utilização de funcionalidades avançadas de inteligência artificial para elevar exponencialmente a produtividade e a qualidade do código entregue.</value>
   </data>
   <data name="Section_Experience" xml:space="preserve">
     <value>Experiência</value>

@@ -22,11 +22,10 @@
     <value>Hi, I'm Joao Goncalves</value>
   </data>
   <data name="Hero_Subtitle" xml:space="preserve">
-    <value>Professional with over 18 years of experience in designing and implementing high-performance IT solutions.</value>
+    <value>Professional with over 18 years of experience in designing high-performance IT solutions, now supercharged by Artificial Intelligence and advanced development agents.</value>
   </data>
   <data name="Bio_Intro" xml:space="preserve">
-    <value>Combines deep technical expertise with a commitment to best practices, translating business needs into robust and scalable architectures. Extensive experience leading development teams and executing complex projects across various business sectors, specializing in Microsoft technologies like Azure, .NET, Blazor, Razor Pages, MVC, Entity Framework, and SQL Server.&lt;br/&gt;&lt;br/&gt;Passionate about developing cloud-native applications in Azure, with a focus on event-driven architectures and microservices development. Experienced in DevOps practices and proficient in both back-end and front-end development, building robust web applications and designing RESTful APIs that elevate user experiences.</value>
-    <!-- <value>I'm a software engineer focused on architecture, integration, and digital experiences that scale. I work with international teams to deliver reliable products.</value> -->
+    <value>Combines deep technical expertise with a commitment to best practices, translating business needs into robust, scalable architectures. Extensive experience leading teams and executing complex projects, specializing in Microsoft technologies (.NET, Azure, Blazor). Passionate about cloud-native applications, microservices, and full-stack development to build high-performance web applications and RESTful APIs.&lt;br/&gt;&lt;br/&gt;Recently transformed engineering workflows through the intensive adoption of advanced AI tools. An enthusiast of "vibe coding" and spec-driven development, leveraging GitHub Copilot (with Spec-Kit) and Claude Code. Possesses hands-on experience orchestrating AI-assisted ecosystems and utilizing advanced AI features to exponentially elevate productivity and the quality of delivered code.</value>
   </data>
   <data name="Section_Experience" xml:space="preserve">
     <value>Experience</value>
