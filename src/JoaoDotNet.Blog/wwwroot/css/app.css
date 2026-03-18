@@ -15,6 +15,7 @@
 
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -34,6 +35,12 @@ body {
 h1, h2, h3 {
     font-family: "Clash Display", "Segoe UI", sans-serif;
     margin: 0 0 0.75rem 0;
+}
+
+h1:focus:not(:focus-visible),
+h2:focus:not(:focus-visible),
+h3:focus:not(:focus-visible) {
+    outline: none;
 }
 
 a {
