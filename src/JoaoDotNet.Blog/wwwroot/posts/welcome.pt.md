@@ -10,7 +10,7 @@ coverImage: /images/posts/welcome.jpg
 
 # Bem-vindo ao meu blog
 
-Bem-vindo ao meu cantinho na internet! Este espaço foi desenhado para me conhecerem melhor—o que faço, o que me move e as coisas pelas quais sou apaixonado.
+Bem-vindo ao meu cantinho na internet! Este espaço foi desenhado para me conhecerem melhor, o que faço, o que me move e as coisas pelas quais sou apaixonado.
 
 ## Sobre Mim
 
@@ -22,7 +22,7 @@ Atualmente, estou muito interessado em desenvolvimento guiado por especificaçõ
 
 ## Para Além da Tecnologia
 
-Quando não estou a programar, normalmente estou a acompanhar desporto—especialmente futebol (sou Benfiquista com orgulho!). Também sou um grande fã de desportos motorizados (F1 e MotoGP) e ciclismo. Numa nota completamente diferente, também sou dançarino, especificamente dançarino de danças latinas.
+Quando não estou a programar, normalmente estou a acompanhar desporto, especialmente futebol (sou Benfiquista com orgulho!). Também sou um grande fã de desportos motorizados (F1 e MotoGP) e ciclismo. Numa nota completamente diferente, também sou dançarino, especificamente dançarino de danças latinas.
 
 ## O Que Esperar Aqui
 

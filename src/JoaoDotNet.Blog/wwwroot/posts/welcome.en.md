@@ -10,7 +10,7 @@ coverImage: /images/posts/welcome.jpg
 
 # Welcome to my blog
 
-Welcome to my personal corner on the internet! This space is designed for you to get to know me better—what I do, what drives me, and the things I'm passionate about.
+Welcome to my personal corner on the internet! This space is designed for you to get to know me better, what I do, what drives me, and the things I'm passionate about.
 
 ## About Me
 
@@ -22,7 +22,7 @@ Currently, I’m really into spec-driven development. It’s amazing for greenfi
 
 ## Beyond Tech
 
-When I'm not coding, I'm usually following sports—especially football (proud Benfica fan!). I'm also a big fan of motor racing (F1 and MotoGP) and cycling. On a completely different note, I'm also a dancer, specifically a latin dancer.
+When I'm not coding, I'm usually following sports, especially football (proud Benfica fan!). I'm also a big fan of motor racing (F1 and MotoGP) and cycling. On a completely different note, I'm also a dancer, specifically a latin dancer.
 
 ## What to Expect Here
 
