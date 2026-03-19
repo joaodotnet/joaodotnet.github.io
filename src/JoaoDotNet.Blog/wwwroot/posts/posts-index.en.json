@@ -1,5 +1,22 @@
 [
   {
+    "title": "Vibe Coding a Blazor WASM Blog: Zero Manual Code",
+    "date": "2026-03-19T00:00:00",
+    "tags": [
+      "blazor",
+      "webassembly",
+      "ai",
+      "dotnet10"
+    ],
+    "summary": "How I built this Blazor WebAssembly static blog from scratch using AI Agents, Claude Opus 4.6, and GPT-5.3-codex without typing a single line of application code.",
+    "slug": "vibe-coding-blazor-blog",
+    "lang": "en",
+    "readTimeMinutes": 4,
+    "hasTranslation": true,
+    "translationSlug": "vibe-coding-blazor-blog",
+    "coverImage": "/images/profile.jpg"
+  },
+  {
     "title": "Welcome to My Blog",
     "date": "2026-02-22T00:00:00",
     "tags": [
