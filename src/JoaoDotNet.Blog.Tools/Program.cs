@@ -4,7 +4,7 @@ using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
 const int WordsPerMinute = 200;
-const string DefaultBaseUrl = "https://joaodotnet.github.io";
+const string DefaultBaseUrl = "https://joaodotnet.com";
 
 var postsPath = ResolvePostsPath(args);
 if (!Directory.Exists(postsPath))

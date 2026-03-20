@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://joaodotnet.github.io/</loc>
+    <loc>https://joaodotnet.com/</loc>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/posts</loc>
+    <loc>https://joaodotnet.com/posts</loc>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/about</loc>
+    <loc>https://joaodotnet.com/about</loc>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/post/vibe-coding-blazor-blog</loc>
+    <loc>https://joaodotnet.com/post/vibe-coding-blazor-blog</loc>
     <lastmod>2026-03-19</lastmod>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/post/vibe-coding-blazor-blog?lang=pt</loc>
+    <loc>https://joaodotnet.com/post/vibe-coding-blazor-blog?lang=pt</loc>
     <lastmod>2026-03-19</lastmod>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/post/vibe-coding-blazor-blog?lang=en</loc>
+    <loc>https://joaodotnet.com/post/vibe-coding-blazor-blog?lang=en</loc>
     <lastmod>2026-03-19</lastmod>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/post/welcome</loc>
+    <loc>https://joaodotnet.com/post/welcome</loc>
     <lastmod>2026-02-22</lastmod>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/post/welcome?lang=pt</loc>
+    <loc>https://joaodotnet.com/post/welcome?lang=pt</loc>
     <lastmod>2026-02-22</lastmod>
   </url>
   <url>
-    <loc>https://joaodotnet.github.io/post/welcome?lang=en</loc>
+    <loc>https://joaodotnet.com/post/welcome?lang=en</loc>
     <lastmod>2026-02-22</lastmod>
   </url>
 </urlset>
