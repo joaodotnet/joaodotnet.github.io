@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d12"/>
+      <stop offset="100%" stop-color="#1a1a24"/>
+    </linearGradient>
+    <linearGradient id="agentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9313b3"/>
+      <stop offset="100%" stop-color="#58088f"/>
+    </linearGradient>
+    <linearGradient id="blazorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7028e4"/>
+      <stop offset="100%" stop-color="#512bd4"/>
+    </linearGradient>
+    
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c6c8c" />
+    </marker>
+    <marker id="arrowReverse" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#6c6c8c" />
+    </marker>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bg)" rx="10"/>
+
+  <!-- Grid overlay for tech feel -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Connections -->
+  <line x1="200" y1="180" x2="270" y2="180" stroke="#6c6c8c" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="380" y1="240" x2="380" y2="290" stroke="#6c6c8c" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrowReverse)"/>
+  <line x1="490" y1="180" x2="560" y2="180" stroke="#6c6c8c" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Developer Node -->
+  <rect x="50" y="140" width="150" height="80" rx="8" fill="#1e1e2e" stroke="#444" stroke-width="2"/>
+  <text x="125" y="175" fill="#fff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Developer</text>
+  <text x="125" y="195" fill="#aaa" font-family="sans-serif" font-size="12" text-anchor="middle">"Vibe Coding" Prompt</text>
+
+  <!-- AI Agents Node -->
+  <rect x="280" y="120" width="200" height="120" rx="8" fill="url(#agentGradient)" stroke="#d279ff" stroke-width="2"/>
+  <text x="380" y="155" fill="#fff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">AI Agents Workflow</text>
+  <text x="380" y="180" fill="#ddd" font-family="sans-serif" font-size="13" text-anchor="middle">Claude Opus 4.6</text>
+  <text x="380" y="200" fill="#ddd" font-family="sans-serif" font-size="13" text-anchor="middle">GPT-5.3-Codex</text>
+  <text x="380" y="220" fill="#ddd" font-family="sans-serif" font-size="13" text-anchor="middle">Gemini</text>
+
+  <!-- MCP Node -->
+  <rect x="290" y="300" width="180" height="80" rx="8" fill="#1e1e2e" stroke="#0078d4" stroke-width="2"/>
+  <text x="380" y="335" fill="#fff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">MS Docs MCP</text>
+  <text x="380" y="355" fill="#aaa" font-family="sans-serif" font-size="12" text-anchor="middle">.NET 10 / Blazor MASM APIs</text>
+
+  <!-- Blazor Output Node -->
+  <rect x="570" y="130" width="180" height="100" rx="8" fill="url(#blazorGradient)" stroke="#fff" stroke-width="2"/>
+  <text x="660" y="170" fill="#fff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Blazor WASM App</text>
+  <text x="660" y="190" fill="#ddd" font-family="sans-serif" font-size="13" text-anchor="middle">Zero Manual Code</text>
+  <text x="660" y="210" fill="#ddd" font-family="sans-serif" font-size="13" text-anchor="middle">Fully Static &amp; Client-Side</text>
+</svg>

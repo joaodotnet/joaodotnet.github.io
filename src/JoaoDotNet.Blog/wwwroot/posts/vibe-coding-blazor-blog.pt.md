@@ -20,6 +20,8 @@ Mas, sendo um programador primariamente focado em .NET, queria fazer algo difere
 
 ## A Solução: Vibe Coding da Arquitetura
 
+![Fluxo de arquitetura dos Agentes](/images/posts/vibe-coding-workflow.svg)
+
 A parte mais interessante deste projeto não é apenas a tecnologia utilizada, é *como* foi construído. Eu não escrevi o código manualmente. Em vez disso, adotei um workflow chamado "vibe coding", recorrendo de forma massiva a agentes de Inteligência Artificial.
 
 ### Passo 1: A Fase de Planeamento
@@ -32,7 +34,19 @@ O agente explorou a workspace e gerou um ficheiro de especificação detalhado (
 
 Com o plano estruturado, forneci a prompt de volta ao agente, mas desta vez a executar com **GPT-5.2-codex** e **GPT-5.3-codex**. Visto que a IA por vezes demonstra dificuldades com integrações de bibliotecas complexas, forcei a utilização da ferramenta **Microsoft Docs MCP** (Model Context Protocol). Isto garantiu que o agente procurasse e validasse código em tempo real na documentação oficial de .NET 10 e Blazor MASM, evitando "alucinações".
 
-Também contei com o auxílio do **Gemini** para o raciocínio arquitetural mais denso. E, para finalizar com polimento, o agente recorreu a *skills* locais no repositório, nomeadamente a *skill* `image-enhancer`, para optimizar visualmente elementos gerados sem que tivesse de abrir ferramentas de design adicionais.
+Também contei com o auxílio do **Gemini** para o raciocínio arquitetural mais denso. Para além das ferramentas base, os agentes usaram bastante as **Skills** — nomeadamente as `frontend-skills` da Anthropic — para produzir de forma instantânea práticas sólidas de CSS e um design responsivo irrepreensível. E, para finalizar com polimento, o agente recorreu a *skills* locais no repositório, nomeadamente a *skill* `image-enhancer`, para optimizar visualmente elementos gerados sem que tivesse de abrir ferramentas de design adicionais.
+
+Em baixo encontra-se um excerto gerado de como a aplicação processa o Markdown perfeitamente do lado do cliente com recurso ao Markdig:
+
+```csharp
+// Gerado pela IA: processamento do markdown do lado do cliente
+var pipeline = new MarkdownPipelineBuilder()
+    .UseAdvancedExtensions()
+    .UsePragmaLines()
+    .Build();
+    
+var htmlContent = Markdown.ToHtml(rawMarkdownText, pipeline);
+```
 
 ### Passo 3: Implementação (Onde repousa o código)
 
