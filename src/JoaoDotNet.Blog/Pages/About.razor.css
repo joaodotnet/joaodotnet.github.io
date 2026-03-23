@@ -1,3 +1,51 @@
+.skills-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba(220, 38, 38, 0.22);
+    border-bottom: 1px solid rgba(81, 43, 212, 0.24);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.skills-carousel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(220, 38, 38, 0.12), transparent 18%, transparent 82%, rgba(81, 43, 212, 0.12)),
+        rgba(255, 255, 255, 0.02);
+    pointer-events: none;
+}
+
+.skills-carousel-track {
+    display: flex;
+    width: max-content;
+    animation: skills-scroll 26s linear infinite;
+}
+
+.skills-carousel:hover .skills-carousel-track {
+    animation-play-state: paused;
+}
+
+.skills-carousel-group {
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.skill-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 3.1rem;
+    padding: 0.7rem 1.15rem;
+    border-color: rgba(255, 255, 255, 0.08);
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.14), rgba(81, 43, 212, 0.2));
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
 .certification-groups {
     display: grid;
     gap: 2rem;
@@ -81,6 +129,16 @@
     margin: 0.35rem 0 0;
 }
 
+@keyframes skills-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 @media (min-width: 1200px) {
     .certification-groups {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -102,6 +160,17 @@
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 1.5rem;
     }
+
+    .skills-carousel {
+        padding: 1rem 0;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .skills-carousel-group {
+        gap: 0.75rem;
+        padding-right: 0.75rem;
+    }
     
     .certification-badge {
         width: 100px;
@@ -115,5 +184,28 @@
     .education-meta-grid {
         grid-template-columns: 1fr;
         gap: 0.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skills-carousel {
+        overflow: visible;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .skills-carousel-track {
+        display: block;
+        width: 100%;
+        animation: none;
+    }
+
+    .skills-carousel-group {
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    .skills-carousel-group[aria-hidden="true"] {
+        display: none;
     }
 }

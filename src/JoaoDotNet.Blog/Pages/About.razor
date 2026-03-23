@@ -28,11 +28,21 @@
     <div class="section-header">
         <h2>@Localizer["Section_Skills"]</h2>
     </div>
-    <div class="chip-grid">
-        @foreach (var skill in skills)
-        {
-            <span class="chip">@skill</span>
-        }
+    <div class="skills-carousel" aria-label="@Localizer["Section_Skills"]">
+        <div class="skills-carousel-track">
+            <div class="skills-carousel-group">
+                @foreach (var skill in skills)
+                {
+                    <span class="chip skill-chip">@skill</span>
+                }
+            </div>
+            <div class="skills-carousel-group" aria-hidden="true">
+                @foreach (var skill in skills)
+                {
+                    <span class="chip skill-chip">@skill</span>
+                }
+            </div>
+        </div>
     </div>
 </section>
 
