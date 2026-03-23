@@ -1,6 +1,6 @@
 # JoaoDotNet Blog
 
-A bilingual Blazor WebAssembly (.NET 10) personal blog for joaodotnet.com
+A bilingual Blazor WebAssembly (.NET 10) personal blog for joaodotnet.com.
 Default language is Portuguese (pt-PT) with English as secondary. Blog posts are
 Markdown files stored in wwwroot/posts.
 
