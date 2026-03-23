@@ -1,11 +1,14 @@
 .skills-carousel {
+    --skills-carousel-duration: 26s;
+    --skills-carousel-fade-start: 8%;
+    --skills-carousel-fade-end: 92%;
     position: relative;
     overflow: hidden;
     padding: 1.25rem 0;
     border-top: 1px solid rgba(220, 38, 38, 0.22);
     border-bottom: 1px solid rgba(81, 43, 212, 0.24);
-    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black var(--skills-carousel-fade-start), black var(--skills-carousel-fade-end), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black var(--skills-carousel-fade-start), black var(--skills-carousel-fade-end), transparent);
 }
 
 .skills-carousel::before {
@@ -21,7 +24,8 @@
 .skills-carousel-track {
     display: flex;
     width: max-content;
-    animation: skills-scroll 26s linear infinite;
+    animation: skills-scroll var(--skills-carousel-duration) linear infinite;
+    animation-play-state: running;
 }
 
 .skills-carousel:hover .skills-carousel-track {

@@ -26,9 +26,9 @@
 
 <section class="section">
     <div class="section-header">
-        <h2>@Localizer["Section_Skills"]</h2>
+        <h2 id="skills-heading">@Localizer["Section_Skills"]</h2>
     </div>
-    <div class="skills-carousel" aria-label="@Localizer["Section_Skills"]">
+    <div class="skills-carousel" aria-labelledby="skills-heading">
         <div class="skills-carousel-track">
             <div class="skills-carousel-group">
                 @foreach (var skill in skills)
