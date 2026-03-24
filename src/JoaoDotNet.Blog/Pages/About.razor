@@ -26,36 +26,53 @@
 
 <section class="section">
     <div class="section-header">
-        <h2>@Localizer["Section_Skills"]</h2>
+        <h2 id="skills-heading">@Localizer["Section_Skills"]</h2>
     </div>
-    <div class="chip-grid">
-        @foreach (var skill in skills)
-        {
-            <span class="chip">@skill</span>
-        }
+    <div class="skills-carousel" aria-labelledby="skills-heading">
+        <div class="skills-carousel-track">
+            <div class="skills-carousel-group">
+                @foreach (var skill in skills)
+                {
+                    <span class="chip skill-chip">@skill</span>
+                }
+            </div>
+            <div class="skills-carousel-group" aria-hidden="true">
+                @foreach (var skill in skills)
+                {
+                    <span class="chip skill-chip">@skill</span>
+                }
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="section">
     <div class="section-header">
-        <h2>@Localizer["Section_Certifications"]</h2>
+        <h2 id="certifications-heading">@Localizer["Section_Certifications"]</h2>
     </div>
-    <div class="certification-groups">
-        @foreach (var group in certificationGroups)
-        {
-            <div class="certification-group">
-                <h3 class="certification-group-title">@group.Title</h3>
-                <div class="certifications-grid">
-                    @foreach (var certification in group.Items)
-                    {
-                        <div class="certification-card">
-                            <img src="@certification.ImageUrl" alt="@certification.Name" class="certification-badge" />
-                            <h4 class="certification-name">@certification.Name</h4>
-                        </div>
-                    }
-                </div>
+    <div class="certifications-carousel" aria-labelledby="certifications-heading">
+        <div class="certifications-carousel-track">
+            <div class="certifications-carousel-group">
+                @foreach (var certification in certifications)
+                {
+                    <div class="certification-card certification-carousel-card">
+                        <span class="certification-category-label">@Localizer[$"CertificationGroup_{ResolveCertificationCategory(certification)}"]</span>
+                        <img src="@certification.ImageUrl" alt="@certification.Name" class="certification-badge" />
+                        <h4 class="certification-name">@certification.Name</h4>
+                    </div>
+                }
             </div>
-        }
+            <div class="certifications-carousel-group" aria-hidden="true">
+                @foreach (var certification in certifications)
+                {
+                    <div class="certification-card certification-carousel-card">
+                        <span class="certification-category-label">@Localizer[$"CertificationGroup_{ResolveCertificationCategory(certification)}"]</span>
+                        <img src="@certification.ImageUrl" alt="@certification.Name" class="certification-badge" />
+                        <h4 class="certification-name">@certification.Name</h4>
+                    </div>
+                }
+            </div>
+        </div>
     </div>
 </section>
 
@@ -88,17 +105,18 @@
 
 @code {
     private static readonly string[] certificationCategoryOrder = ["Specialty", "Expert", "Associate", "Fundamentals", "AppliedSkills"];
+    private static readonly IReadOnlyDictionary<string, int> certificationCategoryIndex = certificationCategoryOrder
+        .Select((category, index) => new KeyValuePair<string, int>(category, index))
+        .ToDictionary(entry => entry.Key, entry => entry.Value);
 
     private IReadOnlyList<TimelineEntry> timelineItems = Array.Empty<TimelineEntry>();
     private IReadOnlyList<string> skills = Array.Empty<string>();
     private IReadOnlyList<Certification> certifications = Array.Empty<Certification>();
-    private IReadOnlyList<CertificationGroup> certificationGroups = Array.Empty<CertificationGroup>();
 
     protected override async Task OnInitializedAsync()
     {
         timelineItems = await ExperienceService.GetExperiencesAsync();
-        certifications = await CertificationService.GetCertificationsAsync();
-        certificationGroups = BuildCertificationGroups(certifications);
+        certifications = SortCertifications(await CertificationService.GetCertificationsAsync());
 
         skills = new List<string>
         {
@@ -115,23 +133,12 @@
         };
     }
 
-    private IReadOnlyList<CertificationGroup> BuildCertificationGroups(IReadOnlyList<Certification> items)
+    private IReadOnlyList<Certification> SortCertifications(IReadOnlyList<Certification> items)
     {
-        return certificationCategoryOrder
-            .Select(category =>
-            {
-                var groupedItems = items
-                    .Where(certification => string.Equals(ResolveCertificationCategory(certification), category, StringComparison.OrdinalIgnoreCase))
-                    .OrderBy(certification => certification.Order ?? int.MaxValue)
-                    .ThenBy(certification => certification.Name, StringComparer.CurrentCultureIgnoreCase)
-                    .ToList();
-
-                return new CertificationGroup(
-                    category,
-                    Localizer[$"CertificationGroup_{category}"],
-                    groupedItems);
-            })
-            .Where(group => group.Items.Count > 0)
+        return items
+            .OrderBy(certification => certificationCategoryIndex.GetValueOrDefault(ResolveCertificationCategory(certification), int.MaxValue))
+            .ThenBy(certification => certification.Order ?? int.MaxValue)
+            .ThenBy(certification => certification.Name, StringComparer.CurrentCultureIgnoreCase)
             .ToList();
     }
 
@@ -164,6 +171,4 @@
 
         return "Associate";
     }
-
-    private sealed record CertificationGroup(string Category, string Title, IReadOnlyList<Certification> Items);
 }

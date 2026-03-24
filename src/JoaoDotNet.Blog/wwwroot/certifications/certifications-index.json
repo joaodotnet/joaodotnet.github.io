@@ -28,6 +28,13 @@
     "credentialUrl": ""
   },
   {
+    "name": "Microsoft Applied Skills: Accelerate AI-assisted development by using GitHub Copilot",
+    "category": "AppliedSkills",
+    "order": 2,
+    "imageUrl": "images/certifications/applied-skill.svg",
+    "credentialUrl": ""
+  },
+  {
     "name": "Microsoft Certified: Azure Security Engineer Associate",
     "category": "Associate",
     "order": 1,
