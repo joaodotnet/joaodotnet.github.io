@@ -50,25 +50,38 @@
     white-space: nowrap;
 }
 
-.certification-groups {
-    display: grid;
-    gap: 2rem;
-    align-items: start;
+.certifications-carousel {
+    --certifications-carousel-duration: 42s;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+    mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
 
-.certification-group-title {
-    margin: 0;
-    font-size: 1rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-secondary);
+.certifications-carousel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(220, 38, 38, 0.08), transparent 20%, transparent 80%, rgba(81, 43, 212, 0.08));
+    pointer-events: none;
 }
 
-.certifications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
+.certifications-carousel-track {
+    display: flex;
+    width: max-content;
+    animation: certifications-scroll var(--certifications-carousel-duration) linear infinite;
+}
+
+.certifications-carousel:hover .certifications-carousel-track {
+    animation-play-state: paused;
+}
+
+.certifications-carousel-group {
+    display: flex;
+    flex-shrink: 0;
+    gap: 1rem;
+    padding-right: 1rem;
 }
 
 .certification-card {
@@ -86,10 +99,34 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
+.certification-carousel-card {
+    flex-shrink: 0;
+    justify-content: flex-start;
+    width: 220px;
+    max-width: 220px;
+    min-height: 100%;
+}
+
 .certification-card:hover {
     transform: translateY(-4px);
     border-color: var(--primary);
     box-shadow: var(--shadow);
+}
+
+.certification-category-label {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 0.85rem;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .certification-badge {
@@ -143,26 +180,26 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .certification-groups {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2.5rem;
-        align-items: start;
+@keyframes certifications-scroll {
+    from {
+        transform: translateX(0);
     }
 
-    .certifications-grid {
-        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    to {
+        transform: translateX(-50%);
     }
 }
 
 @media (max-width: 768px) {
-    .certification-groups {
-        gap: 1.5rem;
+    .certifications-carousel {
+        padding: 0.75rem 0;
+        mask-image: none;
+        -webkit-mask-image: none;
     }
 
-    .certifications-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 1.5rem;
+    .certifications-carousel-group {
+        gap: 0.85rem;
+        padding-right: 0.85rem;
     }
 
     .skills-carousel {
@@ -180,6 +217,11 @@
         width: 100px;
         height: 100px;
     }
+
+    .certification-carousel-card {
+        width: 200px;
+        max-width: 200px;
+    }
     
     .certification-name {
         font-size: 0.85rem;
@@ -192,6 +234,27 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+    .certifications-carousel {
+        overflow: visible;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .certifications-carousel-track {
+        display: block;
+        width: 100%;
+        animation: none;
+    }
+
+    .certifications-carousel-group {
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    .certifications-carousel-group[aria-hidden="true"] {
+        display: none;
+    }
+
     .skills-carousel {
         overflow: visible;
         mask-image: none;
