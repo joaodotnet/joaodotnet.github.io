@@ -107,7 +107,7 @@
     private static readonly string[] certificationCategoryOrder = ["Specialty", "Expert", "Associate", "Fundamentals", "AppliedSkills"];
     private static readonly IReadOnlyDictionary<string, int> certificationCategoryIndex = certificationCategoryOrder
         .Select((category, index) => new KeyValuePair<string, int>(category, index))
-        .ToDictionary();
+        .ToDictionary(entry => entry.Key, entry => entry.Value);
 
     private IReadOnlyList<TimelineEntry> timelineItems = Array.Empty<TimelineEntry>();
     private IReadOnlyList<string> skills = Array.Empty<string>();
