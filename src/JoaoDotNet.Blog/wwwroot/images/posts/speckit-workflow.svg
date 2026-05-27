@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d12"/>
+      <stop offset="100%" stop-color="#1a1a24"/>
+    </linearGradient>
+    <linearGradient id="implGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#339af0"/>
+      <stop offset="100%" stop-color="#1c7ed6"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6c6c8c" />
+    </marker>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bg)" rx="10"/>
+
+  <!-- Grid overlay -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Connection arrows -->
+  <line x1="175" y1="115" x2="200" y2="115" stroke="#6c6c8c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="350" y1="115" x2="375" y2="115" stroke="#6c6c8c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="525" y1="115" x2="550" y2="115" stroke="#6c6c8c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="700" y1="115" x2="725" y2="115" stroke="#6c6c8c" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="875" y1="115" x2="900" y2="115" stroke="#6c6c8c" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Steps -->
+  <!-- 1. Constitution -->
+  <rect x="30" y="70" width="145" height="90" rx="8" fill="#1e1e2e" stroke="#a5d8ff" stroke-width="1.5"/>
+  <text x="102" y="105" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">1. Constitution</text>
+  <text x="102" y="125" fill="#a5d8ff" font-family="sans-serif" font-size="11" text-anchor="middle">Project principles</text>
+  <text x="102" y="140" fill="#a5d8ff" font-family="sans-serif" font-size="11" text-anchor="middle">&amp; guardrails</text>
+
+  <!-- 2. Specify -->
+  <rect x="205" y="70" width="145" height="90" rx="8" fill="#1e1e2e" stroke="#74c0fc" stroke-width="1.5"/>
+  <text x="277" y="105" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">2. Specify</text>
+  <text x="277" y="125" fill="#74c0fc" font-family="sans-serif" font-size="11" text-anchor="middle">Define what &amp; why</text>
+  <text x="277" y="140" fill="#74c0fc" font-family="sans-serif" font-size="11" text-anchor="middle">(requirements)</text>
+
+  <!-- 3. Clarify -->
+  <rect x="380" y="70" width="145" height="90" rx="8" fill="#1e1e2e" stroke="#4dabf7" stroke-width="1.5"/>
+  <text x="452" y="105" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">3. Clarify</text>
+  <text x="452" y="125" fill="#4dabf7" font-family="sans-serif" font-size="11" text-anchor="middle">Resolve ambiguity</text>
+  <text x="452" y="140" fill="#4dabf7" font-family="sans-serif" font-size="11" text-anchor="middle">&amp; assumptions</text>
+
+  <!-- 4. Plan -->
+  <rect x="555" y="70" width="145" height="90" rx="8" fill="#1e1e2e" stroke="#339af0" stroke-width="1.5"/>
+  <text x="627" y="105" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">4. Plan</text>
+  <text x="627" y="125" fill="#339af0" font-family="sans-serif" font-size="11" text-anchor="middle">Technical approach</text>
+  <text x="627" y="140" fill="#339af0" font-family="sans-serif" font-size="11" text-anchor="middle">&amp; architecture</text>
+
+  <!-- 5. Tasks -->
+  <rect x="730" y="70" width="145" height="90" rx="8" fill="#1e1e2e" stroke="#228be6" stroke-width="1.5"/>
+  <text x="802" y="105" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">5. Tasks</text>
+  <text x="802" y="125" fill="#228be6" font-family="sans-serif" font-size="11" text-anchor="middle">Decompose work</text>
+  <text x="802" y="140" fill="#228be6" font-family="sans-serif" font-size="11" text-anchor="middle">into actionable items</text>
+
+  <!-- 6. Implement -->
+  <rect x="905" y="70" width="145" height="90" rx="8" fill="url(#implGradient)" stroke="#fff" stroke-width="2"/>
+  <text x="977" y="105" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">6. Implement</text>
+  <text x="977" y="125" fill="#fff" font-family="sans-serif" font-size="11" text-anchor="middle">Execute code</text>
+  <text x="977" y="140" fill="#fff" font-family="sans-serif" font-size="11" text-anchor="middle">generation &amp; QA</text>
+</svg>

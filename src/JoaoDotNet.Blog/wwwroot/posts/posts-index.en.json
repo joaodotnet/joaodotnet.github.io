@@ -1,5 +1,25 @@
 [
   {
+    "title": "Beyond Vibe Coding: My Experience with Spec-Driven Development and GitHub Spec Kit",
+    "date": "2026-05-26T00:00:00",
+    "tags": [
+      "ai",
+      "software-architecture",
+      "spec-driven-development",
+      "github-spec-kit",
+      "github-copilot",
+      "developer-productivity",
+      "enterprise-software"
+    ],
+    "summary": "Freestyle AI coding (or vibe coding) is great for small demos, but fails at enterprise scale. Here is my honest experience adopting Spec-Driven Development (SDD) to bring structure, predictability, and guardrails to AI-assisted coding.",
+    "slug": "beyond-vibe-coding-spec-driven-development",
+    "lang": "en",
+    "readTimeMinutes": 10,
+    "hasTranslation": true,
+    "translationSlug": "beyond-vibe-coding-spec-driven-development",
+    "coverImage": "/images/profile.jpg"
+  },
+  {
     "title": "Vibe Coding a Blazor WASM Blog: Zero Manual Code",
     "date": "2026-03-19T00:00:00",
     "tags": [
@@ -11,7 +31,7 @@
     "summary": "How I built this Blazor WebAssembly static blog from scratch using AI Agents, Claude Opus 4.6, and GPT-5.3-codex without typing a single line of application code.",
     "slug": "vibe-coding-blazor-blog",
     "lang": "en",
-    "readTimeMinutes": 4,
+    "readTimeMinutes": 5,
     "hasTranslation": true,
     "translationSlug": "vibe-coding-blazor-blog",
     "coverImage": "/images/profile.jpg"

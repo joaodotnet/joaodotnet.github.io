@@ -1,5 +1,25 @@
 [
   {
+    "title": "Para al\u00E9m do Vibe Coding: A minha experi\u00EAncia com Spec-Driven Development e o GitHub Spec Kit",
+    "date": "2026-05-26T00:00:00",
+    "tags": [
+      "ai",
+      "software-architecture",
+      "spec-driven-development",
+      "github-spec-kit",
+      "github-copilot",
+      "developer-productivity",
+      "enterprise-software"
+    ],
+    "summary": "A programa\u00E7\u00E3o espont\u00E2nea com IA (ou \u0027vibe coding\u0027) \u00E9 fant\u00E1stica para pequenas demonstra\u00E7\u00F5es, mas falha \u00E0 escala empresarial. Eis a minha experi\u00EAncia sincera a adotar o Spec-Driven Development (SDD) para trazer estrutura, previsibilidade e salvaguardas \u00E0 programa\u00E7\u00E3o assistida por IA.",
+    "slug": "beyond-vibe-coding-spec-driven-development",
+    "lang": "pt",
+    "readTimeMinutes": 12,
+    "hasTranslation": true,
+    "translationSlug": "beyond-vibe-coding-spec-driven-development",
+    "coverImage": "/images/profile.jpg"
+  },
+  {
     "title": "Vibe Coding de um Blog em Blazor WASM: Zero C\u00F3digo Manual",
     "date": "2026-03-19T00:00:00",
     "tags": [
@@ -11,7 +31,7 @@
     "summary": "Como constru\u00ED este blog est\u00E1tico em Blazor WebAssembly do zero utilizando agentes de IA, Claude Opus 4.6 e GPT-5.3-codex, sem digitar uma \u00FAnica linha de c\u00F3digo aplicacional.",
     "slug": "vibe-coding-blazor-blog",
     "lang": "pt",
-    "readTimeMinutes": 5,
+    "readTimeMinutes": 6,
     "hasTranslation": true,
     "translationSlug": "vibe-coding-blazor-blog",
     "coverImage": "/images/profile.jpg"
