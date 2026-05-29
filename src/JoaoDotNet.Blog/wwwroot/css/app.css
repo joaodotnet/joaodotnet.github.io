@@ -70,6 +70,9 @@ a {
     padding: 1rem 2.5rem;
     gap: 1.5rem;
     position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .brand {
@@ -142,6 +145,9 @@ a {
 .site-main {
     flex: 1;
     padding: 2.5rem 2.5rem 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .hero {
@@ -541,7 +547,7 @@ a {
 
 .site-footer {
     border-top: 1px solid var(--border);
-    padding: 2rem 2.5rem;
+    padding: 2rem 0;
     color: var(--text-secondary);
 }
 
@@ -550,6 +556,10 @@ a {
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2.5rem;
 }
 
 .footer-link {
@@ -661,6 +671,10 @@ a {
 
     .nav-bar {
         padding: 1rem 1.5rem;
+    }
+
+    .footer-inner {
+        padding: 0 1.5rem;
     }
 
     .about-hero {
