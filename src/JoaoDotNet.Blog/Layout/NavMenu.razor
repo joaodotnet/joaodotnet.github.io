@@ -1,7 +1,7 @@
-﻿@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResources> Localizer
+@inject Microsoft.Extensions.Localization.IStringLocalizer<SharedResources> Localizer
 
 <nav class="nav-bar">
-    <a class="brand" href="">JOÃO GONÇALVES (joaodotnet)</a>
+    <a class="brand" href="" @onclick="CloseNavMenu">JOÃO GONÇALVES (joaodotnet)</a>
 
     <button class="nav-toggle" @onclick="ToggleNavMenu" aria-expanded="@isNavOpen">
         <span class="nav-toggle-bar"></span>
@@ -9,10 +9,10 @@
     </button>
 
     <div class="nav-links @(isNavOpen ? "open" : string.Empty)">
-        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">@Localizer["Nav_Home"]</NavLink>
-        <NavLink class="nav-link" href="about">@Localizer["Nav_About"]</NavLink>
-        <NavLink class="nav-link" href="posts">@Localizer["Nav_Blog"]</NavLink>
-        <NavLink class="nav-link" href="contact">@Localizer["Nav_Contact"]</NavLink>
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All" @onclick="CloseNavMenu">@Localizer["Nav_Home"]</NavLink>
+        <NavLink class="nav-link" href="about" @onclick="CloseNavMenu">@Localizer["Nav_About"]</NavLink>
+        <NavLink class="nav-link" href="posts" @onclick="CloseNavMenu">@Localizer["Nav_Blog"]</NavLink>
+        <NavLink class="nav-link" href="contact" @onclick="CloseNavMenu">@Localizer["Nav_Contact"]</NavLink>
         <LanguageToggle />
     </div>
 </nav>
@@ -23,5 +23,10 @@
     private void ToggleNavMenu()
     {
         isNavOpen = !isNavOpen;
+    }
+
+    private void CloseNavMenu()
+    {
+        isNavOpen = false;
     }
 }

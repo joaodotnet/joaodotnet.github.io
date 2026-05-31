@@ -1,5 +1,3 @@
-@import url("https://api.fontshare.com/v2/css?f[]=clash-display@400,600,700&f[]=general-sans@400,500,600&f[]=jetbrains-mono@400,500&display=swap");
-
 :root {
     --primary: #dc2626;
     --primary-dark: #991b1b;
@@ -32,14 +30,68 @@ body {
     font-family: "General Sans", "Segoe UI", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Clash Display", "Segoe UI", sans-serif;
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 1rem 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+table, .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+table th, table td, .table th, .table td {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+table th, .table th {
+    background: var(--surface-elevated);
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+table tr:nth-child(even), .table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
 }
 
 h1:focus,
 h2:focus,
-h3:focus {
+h3:focus,
+h4:focus {
     outline: none;
 }
 
@@ -340,7 +392,8 @@ a {
 }
 
 .about-copy h1 {
-    font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+    font-size: 40px;
+    font-weight: 400;
     line-height: 1.1;
     margin-bottom: 1rem;
 }
@@ -385,6 +438,22 @@ a {
     display: grid;
     grid-template-columns: 24px 1fr;
     gap: 1rem;
+    position: relative;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 1.8rem;
+    left: 11px;
+    bottom: -1.5rem;
+    width: 2px;
+    background: var(--border);
+    z-index: 0;
+}
+
+.timeline-item:last-child::after {
+    display: none;
 }
 
 .timeline-dot {
@@ -394,6 +463,8 @@ a {
     border-radius: 50%;
     margin-top: 0.5rem;
     box-shadow: 0 0 12px rgba(220, 38, 38, 0.6);
+    position: relative;
+    z-index: 1;
 }
 
 .timeline-meta {
@@ -480,9 +551,31 @@ a {
 }
 
 .markdown-body {
-    line-height: 1.75;
-    color: var(--text-primary);
+    line-height: 1.8;
+    color: rgba(245, 245, 245, 0.95);
+    font-size: 1.05rem;
 }
+
+.markdown-body p {
+    margin: 0 0 1.25rem 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    font-family: "Clash Display", sans-serif;
+    color: var(--text-primary);
+    margin: 2rem 0 1rem 0;
+    font-weight: 500;
+}
+
+.markdown-body h1 { font-size: 40px; font-weight: 400; }
+.markdown-body h2 { font-size: 1.6rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+.markdown-body h3 { font-size: 1.3rem; }
+.markdown-body h4 { font-size: 1.15rem; }
 
 .markdown-body a {
     color: var(--accent-light);
@@ -499,8 +592,60 @@ a {
 .markdown-body code {
     font-family: "JetBrains Mono", monospace;
     background: rgba(255, 255, 255, 0.08);
-    padding: 0.2rem 0.4rem;
+    padding: 0.25rem 0.45rem;
     border-radius: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--accent-light);
+}
+
+.markdown-body pre {
+    background: rgba(10, 10, 10, 0.5);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.2rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.markdown-body pre code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.markdown-body blockquote {
+    border-left: 4px solid var(--accent-light);
+    background: rgba(81, 43, 212, 0.05);
+    margin: 1.5rem 0;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 0.75rem 0.75rem 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.markdown-body blockquote p {
+    margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    margin: 0 0 1.25rem 0;
+    padding-left: 1.5rem;
+}
+
+.markdown-body li {
+    margin-bottom: 0.5rem;
+}
+
+.markdown-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border);
+    margin: 1.8rem auto;
+    display: block;
 }
 
 .notice {
@@ -707,4 +852,19 @@ a {
     border-radius: 8px;
     display: block;
     object-fit: cover;
-} 
+}
+
+@media (max-width: 480px) {
+    .brand {
+        font-size: 1.05rem;
+    }
+    .site-main {
+        padding: 1.5rem 1rem 2.5rem;
+    }
+    .nav-bar {
+        padding: 1rem 1rem;
+    }
+    .footer-inner {
+        padding: 0 1rem;
+    }
+}

@@ -1,10 +1,12 @@
 .contact-email {
     font-weight: 600;
-    color: var(--color-accent-primary);
+    color: var(--accent-light);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .contact-email:hover {
+    color: var(--primary);
     text-decoration: underline;
 }
 
@@ -20,17 +22,18 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
+    background: var(--surface-elevated);
+    border: 1px solid var(--border);
     border-radius: 0.5rem;
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--text-secondary);
     transition: all 0.2s ease;
 }
 
 .contact-link:hover {
-    background: var(--color-surface-hover);
-    border-color: var(--color-accent-primary);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-light);
+    color: var(--text-primary);
     transform: translateY(-2px);
 }
 
